@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly | Curated Vacation Rentals</title>
+    <link rel="icon" type="image/webp" href="images/icon.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Manrope:wght@300;400;500;600;700&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/home.css?v=20261109">
+</head>
+
+<body class="home-page">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <a href="index.html" class="preloader-brand" aria-label="Stackly home"><img src="images/logo-full-theme.webp" alt="Stackly"></a>
+            <div class="preloader-bars">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="header-logo"><img src="images/logo-full-theme.webp" alt="Stackly"></a>
+            <nav class="header-nav">
+                <a href="#home" class="nav-link is-active" aria-current="page">Home</a>
+                <a href="HTML/story.html" class="nav-link">Story</a>
+                <a href="HTML/experiences.html" class="nav-link">Experiences</a>
+                <a href="HTML/journal.html" class="nav-link">Journal</a>
+                <a href="HTML/contact.html" class="nav-link">Contact</a>
+            </nav>
+            <a href="HTML/login.html" class="header-cta">Login</a>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-bg"></div>
+        <button class="mobile-close" id="mobileClose"><i class="fas fa-times"></i></button>
+        <a href="index.html" class="mobile-logo" aria-label="Stackly home"><img src="images/logo-full-theme.webp" alt="Stackly"></a>
+        <nav class="mobile-nav">
+            <a href="#home" class="mobile-link is-active" aria-current="page">Home</a>
+            <a href="HTML/story.html" class="mobile-link">Story</a>
+            <a href="HTML/experiences.html" class="mobile-link">Experiences</a>
+            <a href="HTML/journal.html" class="mobile-link">Journal</a>
+            <a href="HTML/contact.html" class="mobile-link">Contact</a>
+            <a href="HTML/login.html" class="mobile-link mobile-link--cta">Login</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Section 1: Hero -->
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <div class="hero-img hero-slide hero-img-1">
+                    <img src="images/r1.webp" alt="Coastal Villa">
+                </div>
+                <div class="hero-img hero-slide hero-img-2">
+                    <img src="images/r2.webp" alt="Sunset Retreat">
+                </div>
+                <div class="hero-img hero-slide hero-img-3">
+                    <img src="images/r21.webp" alt="Sunset Villa">
+                </div>
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-kicker">
+                    <span class="kicker-line"></span>
+                    <span>CURATED ESCAPES</span>
+                    <span class="kicker-line"></span>
+                </div>
+                <h1 class="hero-title">
+                    <div class="title-line"><span>SECLUDED</span></div>
+                    <div class="title-line"><span class="title-accent">PARADISES</span></div>
+                    <div class="title-line"><span>AWAIT</span></div>
+                </h1>
+                <p class="hero-description">Refined sanctuaries where architecture embraces nature. Private villas crafted for those who seek serenity beyond the ordinary.</p>
+                <div class="hero-cta">
+                    <a href="HTML/404.html" class="hero-btn">
+                        <span>Explore Villas</span>
+                        <div class="btn-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Story -->
+        <section id="story" class="story">
+            <div class="story-container">
+                <div class="story-grid">
+                    <div class="story-content">
+                        <div class="section-header">
+                            <span class="section-subtitle">OUR STORY</span>
+                            <h2 class="section-title">Where Luxury <span class="title-italic">Meets</span> Nature</h2>
+                        </div>
+                        <div class="story-text">
+                            <p class="text-lead">Stackly is born from a passion for discovering extraordinary homes in the world's most breathtaking locations.</p>
+                            <p>Each villa in our collection is handpicked for its unique character, impeccable design, and seamless harmony with its surroundings. We don't just offer accommodation—we curate experiences that linger long after departure.</p>
+                        </div>
+                        <div class="story-stats">
+                            <div class="stat-block">
+                                <div class="stat-number">62</div>
+                                <div class="stat-label">Exclusive Villas</div>
+                            </div>
+                            <div class="stat-block">
+                                <div class="stat-number">18</div>
+                                <div class="stat-label">Destinations</div>
+                            </div>
+                            <div class="stat-block">
+                                <div class="stat-number">15</div>
+                                <div class="stat-label">Years Curating</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story-visual">
+                        <div class="story-image-wrap">
+                            <div class="story-image">
+                                <img src="images/r3.webp" alt="Villa Interior">
+                            </div>
+                            <div class="story-image-frame"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: The Stackly Standard -->
+        <section class="standard">
+            <div class="standard-container">
+                <div class="standard-intro">
+                    <div>
+                        <span class="section-subtitle light">THE STACKLY STANDARD</span>
+                        <h2 class="section-title light">Four Promises, <span class="title-italic">Kept</span> Always</h2>
+                    </div>
+                    <p class="standard-lead">Behind every stay is a quiet obsession with detail. These are the commitments that shape each Stackly home and every moment within it.</p>
+                </div>
+
+                <div class="standard-stack">
+                    <article class="standard-card">
+                        <div class="standard-card-body">
+                            <span class="standard-card-num">01</span>
+                            <h3>Design-Led Selection</h3>
+                            <p>Every residence is chosen for its architecture, materiality, and sense of place—never for how many rooms it can fill.</p>
+                            <span class="standard-card-tag">Curated by human eyes</span>
+                        </div>
+                        <div class="standard-card-media">
+                            <img src="images/r28.webp" alt="Design-led villa">
+                        </div>
+                    </article>
+                    <article class="standard-card">
+                        <div class="standard-card-body">
+                            <span class="standard-card-num">02</span>
+                            <h3>A Concierge, Not a Call Centre</h3>
+                            <p>One dedicated host from first enquiry to final farewell, available around the clock and never reading from a script.</p>
+                            <span class="standard-card-tag">One point of contact, always</span>
+                        </div>
+                        <div class="standard-card-media">
+                            <img src="images/r31.webp" alt="Concierge service">
+                        </div>
+                    </article>
+                    <article class="standard-card">
+                        <div class="standard-card-body">
+                            <span class="standard-card-num">03</span>
+                            <h3>Privacy as a Priority</h3>
+                            <p>Discreet locations, considered staffing, and unmarked arrivals. Your time away stays entirely your own.</p>
+                            <span class="standard-card-tag">Discreet by design</span>
+                        </div>
+                        <div class="standard-card-media">
+                            <img src="images/r32.webp" alt="Private villa">
+                        </div>
+                    </article>
+                    <article class="standard-card">
+                        <div class="standard-card-body">
+                            <span class="standard-card-num">04</span>
+                            <h3>Rooted in the Local</h3>
+                            <p>Relationships with the people who know a place best—chefs, makers, guides, and neighbours—so you experience it, not just see it.</p>
+                            <span class="standard-card-tag">People, not guidebooks</span>
+                        </div>
+                        <div class="standard-card-media">
+                            <img src="images/r33.webp" alt="Local experience">
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Collection -->
+        <section id="villas" class="collection">
+            <div class="collection-pin">
+                <div class="collection-top">
+                    <div class="collection-top-title">
+                        <span class="section-subtitle">OUR COLLECTION</span>
+                        <h2 class="section-title">Signature <span class="title-italic">Villas</span></h2>
+                    </div>
+                    <p class="collection-lead">A handpicked portfolio of homes designed to be lived in. Move through the collection and find the one that feels like yours.</p>
+                </div>
+
+                <div class="collection-viewport">
+                    <div class="collection-track">
+                        <article class="collection-card">
+                            <div class="collection-card-media">
+                                <img src="images/r4.webp" alt="Casa Marevento">
+                                <span class="collection-card-index">01</span>
+                            </div>
+                            <div class="collection-card-info">
+                                <span class="collection-card-loc">Amalfi Coast, Italy</span>
+                                <h3>Casa Marevento</h3>
+                                <p>Dramatic cliffside villa with panoramic sea views, infinity pool, and private terraced gardens.</p>
+                                <div class="collection-card-meta">
+                                    <span>8 Guests</span>
+                                    <span>From €18,500 / week</span>
+                                </div>
+                                <a href="HTML/contact.html" class="collection-card-link">View Details <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </article>
+                        <article class="collection-card">
+                            <div class="collection-card-media">
+                                <img src="images/r5.webp" alt="Podere Bellavista">
+                                <span class="collection-card-index">02</span>
+                            </div>
+                            <div class="collection-card-info">
+                                <span class="collection-card-loc">Tuscany, Italy</span>
+                                <h3>Podere Bellavista</h3>
+                                <p>Renovated farmhouse among vineyards with olive groves and sunset views.</p>
+                                <div class="collection-card-meta">
+                                    <span>6 Guests</span>
+                                    <span>From €12,800 / week</span>
+                                </div>
+                                <a href="HTML/contact.html" class="collection-card-link">View Details <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </article>
+                        <article class="collection-card">
+                            <div class="collection-card-media">
+                                <img src="images/r6.webp" alt="Quinta do Mar">
+                                <span class="collection-card-index">03</span>
+                            </div>
+                            <div class="collection-card-info">
+                                <span class="collection-card-loc">Algarve, Portugal</span>
+                                <h3>Quinta do Mar</h3>
+                                <p>Beachfront estate with direct access to golden sands and spectacular Atlantic views.</p>
+                                <div class="collection-card-meta">
+                                    <span>10 Guests</span>
+                                    <span>From €16,200 / week</span>
+                                </div>
+                                <a href="HTML/contact.html" class="collection-card-link">View Details <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </article>
+                        <article class="collection-card">
+                            <div class="collection-card-media">
+                                <img src="images/r7.webp" alt="Château Lavande">
+                                <span class="collection-card-index">04</span>
+                            </div>
+                            <div class="collection-card-info">
+                                <span class="collection-card-loc">Provence, France</span>
+                                <h3>Château Lavande</h3>
+                                <p>Historic mas with lavender fields, stone courtyard, and mountain vistas.</p>
+                                <div class="collection-card-meta">
+                                    <span>8 Guests</span>
+                                    <span>From €14,900 / week</span>
+                                </div>
+                                <a href="HTML/contact.html" class="collection-card-link">View Details <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="collection-hint">
+                    <span>Scroll to explore</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Experiences -->
+        <section id="experiences" class="experiences">
+            <div class="experiences-bg">
+                <img src="images/r8.webp" alt="Dining">
+                <div class="experiences-overlay"></div>
+            </div>
+            <div class="experiences-container">
+                <div class="experiences-header">
+                    <span class="section-subtitle light">TAILORED EXPERIENCES</span>
+                    <h2 class="section-title light">Moments <span class="title-italic">Crafted</span> Just For You</h2>
+                </div>
+                <div class="experiences-grid">
+                    <div class="experience-item">
+                        <div class="experience-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Private Chef</h3>
+                        <p>Gourmet meals prepared in your villa with locally sourced ingredients</p>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-icon">
+                            <i class="fas fa-ship"></i>
+                        </div>
+                        <h3>Yacht Charter</h3>
+                        <p>Explore hidden coves and coastal gems aboard a private vessel</p>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-icon">
+                            <i class="fas fa-wine-glass-alt"></i>
+                        </div>
+                        <h3>Wine Tours</h3>
+                        <p>Private tastings at acclaimed estates with expert sommeliers</p>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h3>Wellness Retreat</h3>
+                        <p>In-villa treatments and personalized wellness programs</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Destinations -->
+        <section id="destinations" class="destinations">
+            <div class="destinations-container">
+                <div class="destinations-header">
+                    <span class="section-subtitle">WHERE WE GO</span>
+                    <h2 class="section-title">Dream <span class="title-italic">Destinations</span></h2>
+                </div>
+                <div class="destinations-list">
+                    <div class="destination-item">
+                        <div class="destination-image">
+                            <img src="images/r9.webp" alt="Mediterranean">
+                        </div>
+                        <div class="destination-content">
+                            <div class="destination-number">01</div>
+                            <h3 class="destination-name">Mediterranean</h3>
+                            <p class="destination-count">28 Villas</p>
+                        </div>
+                    </div>
+                    <div class="destination-item">
+                        <div class="destination-image">
+                            <img src="images/r10.webp" alt="Atlantic">
+                        </div>
+                        <div class="destination-content">
+                            <div class="destination-number">02</div>
+                            <h3 class="destination-name">Atlantic Coast</h3>
+                            <p class="destination-count">16 Villas</p>
+                        </div>
+                    </div>
+                    <div class="destination-item">
+                        <div class="destination-image">
+                            <img src="images/r11.webp" alt="French Riviera">
+                        </div>
+                        <div class="destination-content">
+                            <div class="destination-number">03</div>
+                            <h3 class="destination-name">French Riviera</h3>
+                            <p class="destination-count">12 Villas</p>
+                        </div>
+                    </div>
+                    <div class="destination-item">
+                        <div class="destination-image">
+                            <img src="images/r12.webp" alt="Aegean">
+                        </div>
+                        <div class="destination-content">
+                            <div class="destination-number">04</div>
+                            <h3 class="destination-name">Aegean Isles</h3>
+                            <p class="destination-count">6 Villas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Travel by Mood -->
+        <section class="moods">
+            <div class="moods-header">
+                <div>
+                    <span class="section-subtitle">TRAVEL BY MOOD</span>
+                    <h2 class="section-title">Choose the <span class="title-italic">Feeling</span></h2>
+                </div>
+                <p class="moods-lead">Not sure where to go? Start with how you want to feel. Hover a mood to uncover the villas that match it.</p>
+            </div>
+
+            <div class="moods-panels">
+                <article class="mood-panel is-active">
+                    <img src="images/r29.webp" alt="By the Sea">
+                    <div class="mood-shade"></div>
+                    <span class="mood-index">01</span>
+                    <span class="mood-label">By the Sea</span>
+                    <div class="mood-details">
+                        <span class="mood-kicker">Coastal Escapes</span>
+                        <h3>By the Sea</h3>
+                        <p>Salt air, endless horizons, and days that drift between the pool and the shore.</p>
+                        <a href="HTML/404.html" class="mood-link">Explore 28 villas <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="mood-panel">
+                    <img src="images/r30.webp" alt="Into the Country">
+                    <div class="mood-shade"></div>
+                    <span class="mood-index">02</span>
+                    <span class="mood-label">Into the Country</span>
+                    <div class="mood-details">
+                        <span class="mood-kicker">Rural Retreats</span>
+                        <h3>Into the Country</h3>
+                        <p>Olive groves, long lunches, and the rare luxury of hearing nothing at all.</p>
+                        <a href="HTML/404.html" class="mood-link">Explore 16 villas <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="mood-panel">
+                    <img src="images/r34.webp" alt="Above the Clouds">
+                    <div class="mood-shade"></div>
+                    <span class="mood-index">03</span>
+                    <span class="mood-label">Above the Clouds</span>
+                    <div class="mood-details">
+                        <span class="mood-kicker">Mountain Air</span>
+                        <h3>Above the Clouds</h3>
+                        <p>Cool mornings, wide vistas, and a fire waiting when the day turns in.</p>
+                        <a href="HTML/404.html" class="mood-link">Explore 12 villas <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="mood-panel">
+                    <img src="images/r35.webp" alt="In the City">
+                    <div class="mood-shade"></div>
+                    <span class="mood-index">04</span>
+                    <span class="mood-label">In the City</span>
+                    <div class="mood-details">
+                        <span class="mood-kicker">Urban Homes</span>
+                        <h3>In the City</h3>
+                        <p>Private terraces above the streets, with the best of the city a short walk away.</p>
+                        <a href="HTML/404.html" class="mood-link">Explore 6 villas <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Section 6: Gallery -->
+        <section class="gallery">
+            <div class="gallery-intro">
+                <span class="section-subtitle">GALLERY</span>
+                <h2 class="section-title">Moments of <span class="title-italic">Elegance</span></h2>
+                <p class="gallery-sub">A visual diary of slow mornings, golden evenings, and everything in between.</p>
+            </div>
+
+            <div class="gallery-marquee">
+                <div class="gallery-track gallery-track--left">
+                    <div class="gallery-group">
+                        <div class="gallery-tile">
+                            <img src="images/r13.webp" alt="Sunset Dip">
+                            <span class="gallery-caption">Sunset Dip</span>
+                        </div>
+                        <div class="gallery-tile">
+                            <img src="images/r14.webp" alt="Al Fresco Dining">
+                            <span class="gallery-caption">Al Fresco Dining</span>
+                        </div>
+                        <div class="gallery-tile">
+                            <img src="images/r15.webp" alt="Restful Retreat">
+                            <span class="gallery-caption">Restful Retreat</span>
+                        </div>
+                        <div class="gallery-tile">
+                            <img src="images/r16.webp" alt="Secret Gardens">
+                            <span class="gallery-caption">Secret Gardens</span>
+                        </div>
+                        <div class="gallery-tile">
+                            <img src="images/r17.webp" alt="Golden Hour">
+                            <span class="gallery-caption">Golden Hour</span>
+                        </div>
+                    </div>
+                    <div class="gallery-group" aria-hidden="true">
+                        <div class="gallery-tile">
+                            <img src="images/r13.webp" alt="">
+                            <span class="gallery-caption">Sunset Dip</span>
+                        </div>
+                        <div class="gallery-tile">
+                            <img src="images/r14.webp" alt="">
+                            <span class="gallery-caption">Al Fresco Dining</span>
+                        </div>
+                        <div class="gallery-tile">
+                            <img src="images/r15.webp" alt="">
+                            <span class="gallery-caption">Restful Retreat</span>
+                        </div>
+                        <div class="gallery-tile">
+                            <img src="images/r16.webp" alt="">
+                            <span class="gallery-caption">Secret Gardens</span>
+                        </div>
+                        <div class="gallery-tile">
+                            <img src="images/r17.webp" alt="">
+                            <span class="gallery-caption">Golden Hour</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-marquee gallery-marquee--low">
+                <div class="gallery-track gallery-track--right">
+                    <div class="gallery-group">
+                        <div class="gallery-tile">
+                            <img src="images/r22.webp" alt="Coastal Mornings">
+                            <span class="gallery-caption">Coastal Mornings</span>
+                        </div>
+                        <div class="gallery-tile">
+                            <img src="images/r23.webp" alt="Quiet Corners">
+                            <span class="gallery-caption">Quiet Corners</span>
+                        </div>
+                        <div class="gallery-tile">
+                            <img src="images/r24.webp" alt="Poolside Calm">
+                            <span class="gallery-caption">Poolside Calm</span>
+                        </div>
+                        <div class="gallery-tile">
+                            <img src="images/r25.webp" alt="Evening Light">
+                            <span class="gallery-caption">Evening Light</span>
+                        </div>
+                        <div class="gallery-tile">
+                            <img src="images/r26.webp" alt="Nature's Frame">
+                            <span class="gallery-caption">Nature's Frame</span>
+                        </div>
+                    </div>
+                    <div class="gallery-group" aria-hidden="true">
+                        <div class="gallery-tile">
+                            <img src="images/r22.webp" alt="">
+                            <span class="gallery-caption">Coastal Mornings</span>
+                        </div>
+                        <div class="gallery-tile">
+                            <img src="images/r23.webp" alt="">
+                            <span class="gallery-caption">Quiet Corners</span>
+                        </div>
+                        <div class="gallery-tile">
+                            <img src="images/r24.webp" alt="">
+                            <span class="gallery-caption">Poolside Calm</span>
+                        </div>
+                        <div class="gallery-tile">
+                            <img src="images/r25.webp" alt="">
+                            <span class="gallery-caption">Evening Light</span>
+                        </div>
+                        <div class="gallery-tile">
+                            <img src="images/r26.webp" alt="">
+                            <span class="gallery-caption">Nature's Frame</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Journal -->
+        <section id="journal" class="journal">
+            <div class="journal-container">
+                <div class="journal-head">
+                    <div>
+                        <span class="section-subtitle">FROM THE JOURNAL</span>
+                        <h2 class="section-title">Stories <span class="title-italic">Worth</span> Sharing</h2>
+                    </div>
+                    <a href="HTML/404.html" class="journal-all">View all stories <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="journal-layout">
+                    <article class="journal-feature">
+                        <div class="journal-feature-media">
+                            <img src="images/r18.webp" alt="Architecture">
+                            <span class="journal-badge">Featured</span>
+                        </div>
+                        <div class="journal-feature-body">
+                            <div class="journal-meta">
+                                <span>June 2026</span>
+                                <span>Architecture</span>
+                            </div>
+                            <h3>The Art of Mediterranean Architecture</h3>
+                            <p>Exploring the timeless principles that define coastal villa design — from whitewashed walls to courtyards that frame the sea.</p>
+                            <a href="HTML/404.html" class="journal-read">Read Article <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </article>
+
+                    <div class="journal-side">
+                        <article class="journal-mini">
+                            <div class="journal-mini-media">
+                                <img src="images/r19.webp" alt="Cuisine">
+                            </div>
+                            <div class="journal-mini-body">
+                                <span class="journal-mini-date">May 2026</span>
+                                <h3>A Taste of Tuscany</h3>
+                                <p>Culinary traditions passed down through generations.</p>
+                                <a href="HTML/404.html" class="journal-mini-link">Read <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </article>
+                        <article class="journal-mini">
+                            <div class="journal-mini-media">
+                                <img src="images/r20.webp" alt="Travel">
+                            </div>
+                            <div class="journal-mini-body">
+                                <span class="journal-mini-date">April 2026</span>
+                                <h3>The Slow Travel Movement</h3>
+                                <p>Why staying longer reveals more of a destination.</p>
+                                <a href="HTML/404.html" class="journal-mini-link">Read <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </article>
+                        <article class="journal-mini">
+                            <div class="journal-mini-media">
+                                <img src="images/r27.webp" alt="Interiors">
+                            </div>
+                            <div class="journal-mini-body">
+                                <span class="journal-mini-date">March 2026</span>
+                                <h3>Designing for Stillness</h3>
+                                <p>How quiet interiors shape a more restful stay.</p>
+                                <a href="HTML/404.html" class="journal-mini-link">Read <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Testimonial -->
+        <section class="testimonial">
+            <div class="testimonial-container">
+                <div class="testimonial-content">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">Stackly transformed our holiday into something extraordinary. The villa exceeded every expectation, and the attention to detail was impeccable from start to finish.</p>
+                    <div class="testimonial-author">
+                        <div class="author-name">Catherine & James Mitchell</div>
+                        <div class="author-location">London, United Kingdom</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Frequently Asked Questions -->
+        <section class="faq">
+            <div class="faq-container">
+                <div class="faq-aside">
+                    <span class="section-subtitle">GOOD TO KNOW</span>
+                    <h2 class="section-title">Questions, <span class="title-italic">Answered</span></h2>
+                    <p class="faq-lead">Everything you need to know before you arrive—and the reassurance that we are always a message away.</p>
+                    <div class="faq-preview">
+                        <img class="faq-preview-img is-active" src="images/r36.webp" alt="Villa detail" data-preview="0">
+                        <img class="faq-preview-img" src="images/r37.webp" alt="Villa detail" data-preview="1">
+                        <img class="faq-preview-img" src="images/r38.webp" alt="Villa detail" data-preview="2">
+                        <img class="faq-preview-img" src="images/r31.webp" alt="Villa detail" data-preview="3">
+                        <img class="faq-preview-img" src="images/r32.webp" alt="Villa detail" data-preview="4">
+                        <div class="faq-preview-badge"><span>24/7</span> Concierge</div>
+                    </div>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item is-open">
+                        <button class="faq-question" type="button">
+                            <span class="faq-num">01</span>
+                            <span class="faq-question-text">How do I reserve a villa?</span>
+                            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Share your dates and preferences with our team. We will confirm availability, hold your chosen villa, and guide you through a simple booking and payment process.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">
+                            <span class="faq-num">02</span>
+                            <span class="faq-question-text">What is included in the weekly rate?</span>
+                            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Your rate includes the exclusive use of the villa, daily housekeeping, a dedicated host, and a welcome provision tailored to your party. Specific inclusions are listed on each villa page.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">
+                            <span class="faq-num">03</span>
+                            <span class="faq-question-text">Can you arrange experiences and transfers?</span>
+                            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Always. Private chefs, yacht charters, wellness treatments, wine tastings, and airport transfers can all be arranged before you travel or during your stay.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">
+                            <span class="faq-num">04</span>
+                            <span class="faq-question-text">What is your cancellation policy?</span>
+                            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Policies vary by property and season. Your host will share the exact terms before booking, and we are always happy to discuss flexible options for your dates.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">
+                            <span class="faq-num">05</span>
+                            <span class="faq-question-text">Do you welcome families and pets?</span>
+                            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Many of our homes are wonderfully suited to families, and a selection welcome well-behaved pets. Tell us who is travelling and we will match you with the right villa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 9: CTA -->
+        <section class="cta">
+            <div class="cta-background">
+                <img src="images/r21.webp" alt="Sunset Villa">
+                <div class="cta-overlay"></div>
+            </div>
+            <div class="cta-content">
+                <span class="section-subtitle light">BEGIN YOUR JOURNEY</span>
+                <h2 class="section-title light">Ready for <span class="title-italic">Your</span> Escape?</h2>
+                <p class="cta-text">Let us craft the perfect villa experience tailored to your desires</p>
+                <a href="HTML/404.html" class="cta-btn">
+                    <span>Inquire Now</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section 10: Footer -->
+        <footer id="contact" class="footer">
+            <div class="footer-top">
+                <div class="footer-container">
+                    <div class="footer-grid">
+                        <div class="footer-brand">
+                            <a href="index.html" class="footer-logo" aria-label="Stackly home"><img src="images/logo-full-theme.webp" alt="Stackly"></a>
+                            <p class="footer-description">Curating exceptional private villas for discerning travelers seeking authentic luxury and meaningful experiences.</p>
+                            <div class="footer-social">
+                                <a href="HTML/404.html" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="HTML/404.html" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="HTML/404.html" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                                <a href="HTML/404.html" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="index.html"><i class="fas fa-house" aria-hidden="true"></i>Home</a></li>
+                                <li><a href="HTML/story.html"><i class="fas fa-book-open" aria-hidden="true"></i>Story</a></li>
+                                <li><a href="HTML/experiences.html"><i class="fas fa-compass" aria-hidden="true"></i>Experiences</a></li>
+                                <li><a href="HTML/journal.html"><i class="fas fa-pen-nib" aria-hidden="true"></i>Journal</a></li>
+                                <li><a href="HTML/contact.html"><i class="fas fa-address-book" aria-hidden="true"></i>Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Explore</h4>
+                            <ul>
+                                <li><a href="#villas">Villas</a></li>
+                                <li><a href="HTML/experiences.html">Experiences</a></li>
+                                <li><a href="#destinations">Destinations</a></li>
+                                <li><a href="HTML/journal.html">Journal</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Contact</h4>
+                            <ul>
+                                <li><a href="HTML/404.html"><i class="fas fa-envelope" aria-hidden="true"></i>info@stackly.com</a></li>
+                                <li><a href="HTML/404.html"><i class="fas fa-phone" aria-hidden="true"></i>9875645365</a></li>
+                                <li><a href="HTML/404.html"><i class="fas fa-location-dot" aria-hidden="true"></i>MMR Complex, Chinna Thirupathi, near Chinna Muniyappan Kovil, Salem, Tamil Nadu 636008</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-container">
+                    <div class="footer-bottom-content">
+                        <span>© 2026 Stackly. All rights reserved.</span>
+                        <div class="footer-links">
+                            <a href="HTML/404.html">Privacy Policy</a>
+                            <a href="HTML/404.html">Terms & Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="JS/home.js"></script>
+</body>
+
+</html>

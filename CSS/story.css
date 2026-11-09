@@ -1,0 +1,2976 @@
+/* =========================================================
+   STACKLY — STORY PAGE
+   Page-specific layouts only. Shared header, footer, fonts,
+   colors, preloader and base styles live in home.css.
+   ========================================================= */
+
+.story-page {
+    background: var(--color-cream);
+}
+
+.story-page main {
+    overflow: hidden;
+}
+
+.story-page .section-subtitle {
+    margin-bottom: 1.15rem;
+}
+
+.story-page .section-title {
+    letter-spacing: -0.01em;
+}
+
+/* =========================================================
+   SECTION 2 — HERO
+   ========================================================= */
+
+.st-hero {
+    position: relative;
+    min-height: 100vh;
+    padding: 8.5rem 0 3.5rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: var(--color-forest);
+}
+
+.st-hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.st-hero-bg img {
+    object-position: 50% 58%;
+    opacity: 0.42;
+}
+
+.st-hero-veil {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+        radial-gradient(circle at 72% 36%, rgba(184, 149, 106, 0.2), transparent 38%),
+        linear-gradient(180deg, rgba(15, 29, 22, 0.5) 0%, rgba(15, 29, 22, 0.2) 42%, rgba(15, 29, 22, 0.94) 100%);
+}
+
+.st-hero-inner {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.5rem, 3vh, 2.6rem);
+}
+
+.st-hero-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(248, 246, 241, 0.18);
+}
+
+.st-hero-top .section-subtitle {
+    margin-bottom: 0;
+}
+
+.st-hero-coord {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: rgba(248, 246, 241, 0.7);
+    font-family: var(--font-heading);
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+}
+
+.st-hero-coord i {
+    color: var(--color-gold);
+}
+
+.st-hero-title {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-display);
+    font-size: clamp(4rem, 8.2vw, 8rem);
+    font-weight: 400;
+    line-height: 0.88;
+    color: var(--color-cream);
+    pointer-events: none;
+}
+
+.st-hero-line {
+    display: block;
+    overflow: hidden;
+    padding: 0 0 0.06em;
+}
+
+.st-hero-line > span,
+.st-hero-line > em {
+    display: inline-block;
+    will-change: transform;
+}
+
+.st-hero-line--italic {
+    align-self: flex-end;
+    padding-right: 8%;
+}
+
+.st-hero-line--italic em {
+    color: var(--color-gold);
+    font-size: 0.52em;
+    line-height: 1;
+    letter-spacing: 0.04em;
+}
+
+.st-hero-mosaic {
+    display: grid;
+    grid-template-columns: 0.8fr 1.15fr 0.8fr;
+    align-items: end;
+    gap: clamp(1rem, 2vw, 1.75rem);
+    margin-top: 0.25rem;
+}
+
+.st-hero-card {
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
+.st-hero-card--one {
+    margin-top: 3.5rem;
+}
+
+.st-hero-card--three {
+    margin-top: 5rem;
+}
+
+.st-hero-card-img {
+    position: relative;
+    height: clamp(190px, 24vh, 280px);
+    overflow: hidden;
+    border: 1px solid rgba(184, 149, 106, 0.4);
+    background: var(--color-olive);
+}
+
+.st-hero-card--two .st-hero-card-img {
+    height: clamp(260px, 36vh, 410px);
+    border-color: rgba(248, 246, 241, 0.34);
+}
+
+.st-hero-card-img img {
+    transition: transform 1.4s var(--ease-out-expo), filter 0.8s;
+    filter: saturate(0.85);
+}
+
+.st-hero-card:hover .st-hero-card-img img {
+    transform: scale(1.06);
+    filter: saturate(1.05);
+}
+
+.st-hero-card figcaption {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding-top: 0.8rem;
+    color: rgba(248, 246, 241, 0.78);
+    font-family: var(--font-heading);
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: color 0.35s;
+}
+
+.st-hero-card figcaption span {
+    color: var(--color-gold);
+}
+
+.st-hero-card:hover figcaption {
+    color: var(--color-cream);
+}
+
+.st-hero-foot {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 3rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid rgba(248, 246, 241, 0.18);
+}
+
+.st-hero-foot p {
+    max-width: 560px;
+    color: rgba(248, 246, 241, 0.74);
+    font-size: 0.98rem;
+    line-height: 1.75;
+}
+
+.st-scroll-link {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 0.85rem 1.4rem;
+    border: 1px solid rgba(184, 149, 106, 0.55);
+    color: var(--color-cream);
+    font-family: var(--font-heading);
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s, gap 0.4s;
+}
+
+.st-scroll-link:hover {
+    gap: 1.3rem;
+    background: var(--color-gold);
+    color: var(--color-forest);
+}
+
+/* =========================================================
+   SECTION 3 — ORIGIN
+   ========================================================= */
+
+.st-origin {
+    position: relative;
+    padding: 6rem 0;
+    background: var(--color-cream);
+    overflow: hidden;
+}
+
+.st-origin-grid {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 4rem;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: clamp(3rem, 6vw, 6rem);
+    align-items: center;
+}
+
+.st-origin-visual {
+    position: relative;
+    padding: 1.4rem;
+}
+
+.st-origin-frame {
+    position: relative;
+    height: clamp(430px, 62vh, 650px);
+    overflow: hidden;
+    background: var(--color-olive);
+}
+
+.st-origin-frame::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 1px solid rgba(184, 149, 106, 0.6);
+    pointer-events: none;
+}
+
+.st-origin-frame img {
+    transition: transform 1.5s var(--ease-out-expo);
+}
+
+.st-origin-visual:hover .st-origin-frame img {
+    transform: scale(1.055);
+}
+
+.st-origin-stamp {
+    position: absolute;
+    right: 0;
+    bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 1rem 1.2rem;
+    background: var(--color-forest);
+    color: var(--color-cream);
+    font-family: var(--font-heading);
+    font-size: 0.68rem;
+    letter-spacing: 0.16em;
+}
+
+.st-origin-stamp i {
+    color: var(--color-gold);
+}
+
+.st-origin-count {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.55rem 0.9rem;
+    background: var(--color-cream);
+    color: var(--color-gold);
+    font-family: var(--font-heading);
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
+}
+
+.st-origin-copy {
+    transition: transform 0.6s var(--ease-out-expo);
+}
+
+.st-origin-copy:hover {
+    transform: translateY(-6px);
+}
+
+.st-origin-copy .section-title {
+    margin-bottom: 1.8rem;
+}
+
+.st-origin-copy p {
+    color: var(--color-stone);
+    max-width: 540px;
+    margin-bottom: 1.25rem;
+}
+
+.st-dropcap::first-letter {
+    float: left;
+    margin: 0.12em 0.14em 0 0;
+    color: var(--color-forest);
+    font-family: var(--font-display);
+    font-size: 4.2rem;
+    line-height: 0.72;
+}
+
+.st-origin-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin: 2rem 0;
+    padding: 1.25rem 0 1.25rem 1.4rem;
+    border-left: 1px solid var(--color-gold);
+    color: var(--color-forest);
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    line-height: 1.5;
+    transition: border-color 0.4s, padding-left 0.4s;
+}
+
+.st-origin-note:hover {
+    border-color: var(--color-forest);
+    padding-left: 1.9rem;
+}
+
+.st-origin-note i {
+    margin-top: 0.35rem;
+    color: var(--color-gold);
+    font-size: 0.85rem;
+}
+
+.st-text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid var(--color-gold);
+    color: var(--color-charcoal);
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: gap 0.35s, color 0.35s;
+}
+
+.st-text-link:hover {
+    gap: 1.1rem;
+    color: var(--color-gold);
+}
+
+/* =========================================================
+   SECTION 4 — BELIEFS
+   ========================================================= */
+
+.st-beliefs {
+    position: relative;
+    padding: 6rem 0 5rem;
+    background: var(--color-ivory);
+    overflow: hidden;
+}
+
+.st-beliefs-head {
+    max-width: 1500px;
+    margin: 0 auto 3rem;
+    padding: 0 4rem;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 3rem;
+    align-items: end;
+}
+
+.st-beliefs-head p {
+    color: var(--color-stone);
+    max-width: 460px;
+}
+
+.st-belief-stage {
+    position: relative;
+    max-width: 1600px;
+    height: 690px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    perspective: 1400px;
+}
+
+.st-belief-slot {
+    position: absolute;
+    width: 21%;
+    transform-origin: center bottom;
+    will-change: transform;
+}
+
+.st-belief-slot:nth-child(1) {
+    left: 7%;
+    top: 12%;
+    transform: rotate(-7deg);
+}
+
+.st-belief-slot:nth-child(2) {
+    left: 28.67%;
+    top: 3%;
+    transform: rotate(-2deg);
+}
+
+.st-belief-slot:nth-child(3) {
+    left: 50.33%;
+    top: 7%;
+    transform: rotate(2deg);
+}
+
+.st-belief-slot:nth-child(4) {
+    left: 72%;
+    top: 15%;
+    transform: rotate(7deg);
+}
+
+.st-belief-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-cream);
+    border: 1px solid rgba(184, 149, 106, 0.34);
+    box-shadow: 0 24px 60px rgba(26, 47, 35, 0.12);
+    transition: transform 0.65s var(--ease-out-expo), box-shadow 0.65s, border-color 0.4s;
+}
+
+.st-belief-slot:hover {
+    z-index: 5;
+}
+
+.st-belief-card:hover {
+    transform: translateY(-26px);
+    border-color: var(--color-gold);
+    box-shadow: 0 38px 80px rgba(26, 47, 35, 0.2);
+}
+
+.st-belief-img {
+    height: 280px;
+    overflow: hidden;
+    background: var(--color-olive);
+}
+
+.st-belief-img img {
+    transition: transform 1.3s var(--ease-out-expo);
+    filter: saturate(0.9);
+}
+
+.st-belief-card:hover .st-belief-img img {
+    transform: scale(1.06);
+    filter: saturate(1.05);
+}
+
+.st-belief-copy {
+    padding: 1.5rem 1.4rem 1.7rem;
+}
+
+.st-belief-copy > span {
+    display: block;
+    margin-bottom: 0.8rem;
+    color: var(--color-gold);
+    font-family: var(--font-heading);
+    font-size: 0.72rem;
+    letter-spacing: 0.16em;
+}
+
+.st-belief-copy h3 {
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 1.7vw, 1.65rem);
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--color-forest);
+    margin-bottom: 0.65rem;
+}
+
+.st-belief-copy p {
+    color: var(--color-stone);
+    font-size: 0.9rem;
+    line-height: 1.65;
+}
+
+.st-beliefs-hint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+    margin-top: 1.5rem;
+    color: var(--color-stone);
+    font-family: var(--font-heading);
+    font-size: 0.68rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.st-beliefs-hint i {
+    color: var(--color-gold);
+}
+
+/* =========================================================
+   SECTION 5 — TIMELINE
+   ========================================================= */
+
+.st-timeline-section {
+    position: relative;
+    padding: 6rem 0;
+    background: var(--color-cream);
+    overflow: hidden;
+}
+
+.st-timeline-head {
+    max-width: 1500px;
+    margin: 0 auto 2rem;
+    padding: 0 4rem;
+}
+
+.st-timeline {
+    position: relative;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 2rem 5rem 1rem;
+}
+
+.st-timeline-rail {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background: rgba(184, 149, 106, 0.25);
+}
+
+.st-timeline-rail span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: var(--color-gold);
+    transform-origin: top center;
+}
+
+.st-milestone {
+    position: relative;
+    width: 50%;
+    padding-right: 3.6rem;
+    margin-bottom: 3.5rem;
+}
+
+.st-milestone--right {
+    margin-left: 50%;
+    padding-right: 0;
+    padding-left: 3.6rem;
+}
+
+.st-mile-year {
+    position: absolute;
+    top: 1.5rem;
+    right: -2.45rem;
+    z-index: 2;
+    width: 4.9rem;
+    height: 4.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--color-forest);
+    color: var(--color-cream);
+    font-family: var(--font-display);
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    transition: background 0.4s, color 0.4s, transform 0.5s var(--ease-out-expo);
+}
+
+.st-milestone--right .st-mile-year {
+    right: auto;
+    left: -2.45rem;
+}
+
+.st-milestone:hover .st-mile-year {
+    background: var(--color-gold);
+    color: var(--color-forest);
+    transform: rotate(8deg);
+}
+
+.st-mile-card {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    background: var(--color-ivory);
+    border: 1px solid rgba(184, 149, 106, 0.26);
+    transition: transform 0.55s var(--ease-out-expo), border-color 0.35s, box-shadow 0.55s;
+}
+
+.st-milestone:hover .st-mile-card {
+    transform: translateY(-8px);
+    border-color: var(--color-gold);
+    box-shadow: 0 24px 50px rgba(26, 47, 35, 0.1);
+}
+
+.st-mile-img {
+    height: 250px;
+    overflow: hidden;
+    background: var(--color-olive);
+}
+
+.st-mile-img img {
+    transition: transform 1.25s var(--ease-out-expo), filter 0.7s;
+    filter: saturate(0.85);
+}
+
+.st-milestone:hover .st-mile-img img {
+    transform: scale(1.07);
+    filter: saturate(1.05);
+}
+
+.st-mile-copy {
+    padding: 1.6rem 1.4rem;
+}
+
+.st-mile-copy > span {
+    display: block;
+    margin-bottom: 0.55rem;
+    color: var(--color-gold);
+    font-family: var(--font-heading);
+    font-size: 0.66rem;
+    letter-spacing: 0.15em;
+}
+
+.st-mile-copy h3 {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--color-forest);
+    margin-bottom: 0.6rem;
+}
+
+.st-mile-copy p {
+    color: var(--color-stone);
+    font-size: 0.88rem;
+    line-height: 1.65;
+}
+
+/* =========================================================
+   SECTION 6 — FOUNDERS
+   ========================================================= */
+
+.st-founders {
+    position: relative;
+    padding: 6rem 0;
+    background: var(--color-forest);
+    overflow: hidden;
+}
+
+.st-founders-head {
+    max-width: 1300px;
+    margin: 0 auto 3rem;
+    padding: 0 4rem;
+}
+
+.st-founders-head .section-title {
+    color: var(--color-cream);
+}
+
+.st-founders-head p {
+    max-width: 480px;
+    margin-top: 1.4rem;
+    color: rgba(248, 246, 241, 0.7);
+}
+
+.st-founders-stage {
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 4rem 3rem;
+    display: grid;
+    grid-template-columns: 1.06fr 0.94fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.st-founder {
+    position: relative;
+    will-change: transform;
+}
+
+.st-founder--one {
+    margin-top: 3rem;
+}
+
+.st-founder--two {
+    margin-top: 0;
+}
+
+.st-founder-media {
+    position: relative;
+    height: clamp(380px, 58vh, 570px);
+    overflow: hidden;
+    background: var(--color-olive);
+    border: 1px solid rgba(184, 149, 106, 0.35);
+}
+
+.st-founder-media::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 29, 22, 0.82), transparent 55%);
+    pointer-events: none;
+}
+
+.st-founder-media img {
+    transition: transform 1.4s var(--ease-out-expo), filter 0.8s;
+    filter: grayscale(0.5) saturate(0.8);
+}
+
+.st-founder:hover .st-founder-media img {
+    transform: scale(1.04);
+    filter: grayscale(0) saturate(1);
+}
+
+.st-founder figcaption {
+    position: absolute;
+    left: 1.5rem;
+    right: 1.5rem;
+    bottom: 1.4rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.st-founder figcaption span {
+    color: var(--color-gold);
+    font-family: var(--font-heading);
+    font-size: 0.65rem;
+    letter-spacing: 0.17em;
+}
+
+.st-founder figcaption strong {
+    color: var(--color-cream);
+    font-family: var(--font-display);
+    font-size: clamp(1.4rem, 2.2vw, 2rem);
+    font-weight: 400;
+}
+
+.st-founder-quote {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    padding: 1.6rem 1.5rem;
+    background: var(--color-gold);
+    color: var(--color-forest);
+    transform: translateY(101%);
+    transition: transform 0.65s var(--ease-out-expo);
+}
+
+.st-founder:hover .st-founder-quote {
+    transform: translateY(0);
+}
+
+.st-founder-quote i {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.st-founder-quote p {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    line-height: 1.45;
+}
+
+.st-founder-mark {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    z-index: 4;
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
+    margin-top: -75px;
+    border: 1px solid rgba(184, 149, 106, 0.55);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    color: var(--color-gold);
+    font-family: var(--font-heading);
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+    background: rgba(26, 47, 35, 0.82);
+    backdrop-filter: blur(6px);
+    will-change: transform;
+}
+
+/* =========================================================
+   SECTION 7 — ETHOS
+   ========================================================= */
+
+.st-ethos {
+    position: relative;
+    min-height: 720px;
+    padding: 7rem 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: var(--color-forest);
+}
+
+.st-ethos-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.st-ethos-bg img {
+    object-position: 50% 50%;
+}
+
+.st-ethos-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(90deg, rgba(15, 29, 22, 0.92) 0%, rgba(15, 29, 22, 0.7) 46%, rgba(15, 29, 22, 0.2) 100%);
+}
+
+.st-ethos-inner {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 4rem;
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    gap: clamp(3rem, 7vw, 7rem);
+    align-items: end;
+}
+
+.st-ethos-copy p {
+    max-width: 540px;
+    color: rgba(248, 246, 241, 0.72);
+    margin-bottom: 1rem;
+}
+
+.st-ethos-copy .section-title {
+    margin-bottom: 1.6rem;
+}
+
+.st-ethos-swatches {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    height: 430px;
+}
+
+.st-swatch {
+    position: relative;
+    flex: 1 1 0;
+    height: 300px;
+    overflow: hidden;
+    border: 1px solid rgba(248, 246, 241, 0.35);
+    background: var(--color-olive);
+    transition: transform 0.6s var(--ease-out-expo), border-color 0.4s;
+}
+
+.st-swatch:nth-child(1) {
+    height: 340px;
+}
+
+.st-swatch:nth-child(2) {
+    height: 420px;
+}
+
+.st-swatch:nth-child(3) {
+    height: 290px;
+}
+
+.st-swatch:hover {
+    transform: translateY(-18px) rotate(-1.5deg);
+    border-color: var(--color-gold);
+}
+
+.st-swatch img {
+    transition: transform 1.3s var(--ease-out-expo), filter 0.7s;
+    filter: saturate(0.8) brightness(0.85);
+}
+
+.st-swatch:hover img {
+    transform: scale(1.07);
+    filter: saturate(1) brightness(1);
+}
+
+.st-swatch figcaption {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.7rem;
+    background: rgba(15, 29, 22, 0.72);
+    color: var(--color-cream);
+    font-family: var(--font-heading);
+    font-size: 0.65rem;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    transform: translateY(8px);
+    opacity: 0.85;
+    transition: transform 0.45s var(--ease-out-expo), opacity 0.45s;
+}
+
+.st-swatch:hover figcaption {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.st-swatch figcaption span {
+    color: var(--color-gold);
+}
+
+/* =========================================================
+   SECTION 8 — DESTINATIONS
+   ========================================================= */
+
+.st-destinations {
+    position: relative;
+    padding: 6rem 0 5rem;
+    background: var(--color-cream);
+    overflow: hidden;
+}
+
+.st-destinations-head {
+    max-width: 1500px;
+    margin: 0 auto 1rem;
+    padding: 0 4rem;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 3rem;
+    align-items: end;
+}
+
+.st-destinations-head p {
+    color: var(--color-stone);
+    max-width: 420px;
+}
+
+.st-compass {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.st-compass-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 560px;
+    height: 560px;
+    margin: -280px 0 0 -280px;
+    will-change: transform;
+}
+
+.st-orbit-ring {
+    position: absolute;
+    inset: 0;
+    border: 1px solid rgba(184, 149, 106, 0.35);
+    border-radius: 50%;
+}
+
+.st-orbit-ring--two {
+    inset: 70px;
+    border-style: dashed;
+    border-color: rgba(184, 149, 106, 0.25);
+}
+
+.st-orbit-cross {
+    position: absolute;
+    background: rgba(184, 149, 106, 0.18);
+}
+
+.st-orbit-cross--h {
+    top: 50%;
+    left: -18px;
+    right: -18px;
+    height: 1px;
+}
+
+.st-orbit-cross--v {
+    top: -18px;
+    bottom: -18px;
+    left: 50%;
+    width: 1px;
+}
+
+.st-compass-center {
+    position: relative;
+    z-index: 2;
+    width: 330px;
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.st-compass-center img {
+    width: 330px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid rgba(184, 149, 106, 0.55);
+    will-change: transform;
+}
+
+.st-compass-center figcaption {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-top: 1.1rem;
+}
+
+.st-compass-center figcaption span {
+    color: var(--color-gold);
+    font-family: var(--font-heading);
+    font-size: 0.66rem;
+    letter-spacing: 0.2em;
+}
+
+.st-compass-center figcaption strong {
+    font-family: var(--font-display);
+    font-size: 1.55rem;
+    font-weight: 400;
+    color: var(--color-forest);
+}
+
+.st-dest-node {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.4rem 0.7rem 0.4rem 0.4rem;
+    border: 1px solid transparent;
+    border-radius: 80px;
+    background: rgba(252, 251, 247, 0.82);
+    backdrop-filter: blur(8px);
+    transition: transform 0.5s var(--ease-out-expo), border-color 0.4s, background 0.4s;
+}
+
+.st-dest-node:hover,
+.st-dest-node.is-active {
+    transform: scale(1.06);
+    border-color: rgba(184, 149, 106, 0.5);
+    background: var(--color-ivory);
+}
+
+.st-dest-node--one {
+    top: 5%;
+    left: 12%;
+}
+
+.st-dest-node--two {
+    top: 12%;
+    right: 7%;
+}
+
+.st-dest-node--three {
+    bottom: 12%;
+    left: 4%;
+}
+
+.st-dest-node--four {
+    bottom: 5%;
+    right: 13%;
+}
+
+.st-dest-thumb {
+    width: 64px;
+    height: 64px;
+    flex: 0 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid rgba(184, 149, 106, 0.4);
+}
+
+.st-dest-thumb img {
+    transition: transform 0.9s var(--ease-out-expo);
+}
+
+.st-dest-node:hover .st-dest-thumb img,
+.st-dest-node.is-active .st-dest-thumb img {
+    transform: scale(1.12);
+}
+
+.st-dest-label {
+    color: var(--color-forest);
+    font-family: var(--font-heading);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+}
+
+.st-compass-note {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-stone);
+    font-family: var(--font-heading);
+    font-size: 0.63rem;
+    letter-spacing: 0.2em;
+    white-space: nowrap;
+}
+
+.st-compass-note i {
+    color: var(--color-gold);
+}
+
+/* =========================================================
+   SECTION 9 — CRAFT
+   ========================================================= */
+
+.st-craft {
+    position: relative;
+    padding: 6rem 0 4rem;
+    background: var(--color-ivory);
+    overflow: hidden;
+}
+
+.st-craft-head {
+    max-width: 1500px;
+    margin: 0 auto 2.5rem;
+    padding: 0 4rem;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 3rem;
+    align-items: end;
+}
+
+.st-craft-head p {
+    color: var(--color-stone);
+    max-width: 430px;
+}
+
+.st-craft-deck {
+    position: relative;
+    max-width: 1500px;
+    height: 660px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.st-craft-slot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: clamp(240px, 22vw, 320px);
+    transform: translate(-50%, -50%);
+    will-change: transform;
+}
+
+.st-craft-card {
+    background: var(--color-cream);
+    border: 1px solid rgba(184, 149, 106, 0.3);
+    box-shadow: 0 26px 60px rgba(26, 47, 35, 0.13);
+    transition: transform 0.6s var(--ease-out-expo), box-shadow 0.6s, border-color 0.4s;
+}
+
+.st-craft-card:hover {
+    transform: translateY(-20px);
+    border-color: var(--color-gold);
+    box-shadow: 0 40px 80px rgba(26, 47, 35, 0.2);
+}
+
+.st-craft-media {
+    position: relative;
+    height: 270px;
+    overflow: hidden;
+    background: var(--color-olive);
+}
+
+.st-craft-media img {
+    transition: transform 1.3s var(--ease-out-expo), filter 0.7s;
+    filter: saturate(0.85);
+}
+
+.st-craft-card:hover .st-craft-media img {
+    transform: scale(1.07);
+    filter: saturate(1.05);
+}
+
+.st-craft-num {
+    position: absolute;
+    top: 0.9rem;
+    left: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background: rgba(15, 29, 22, 0.72);
+    color: var(--color-cream);
+    font-family: var(--font-heading);
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+}
+
+.st-craft-body {
+    padding: 1.3rem 1.25rem 1.5rem;
+}
+
+.st-craft-body > span {
+    display: block;
+    margin-bottom: 0.45rem;
+    color: var(--color-gold);
+    font-family: var(--font-heading);
+    font-size: 0.63rem;
+    letter-spacing: 0.17em;
+}
+
+.st-craft-body h3 {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--color-forest);
+    margin-bottom: 0.55rem;
+}
+
+.st-craft-body p {
+    color: var(--color-stone);
+    font-size: 0.86rem;
+    line-height: 1.6;
+}
+
+.st-craft-note {
+    position: absolute;
+    left: 4rem;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding-left: 1rem;
+    border-left: 1px solid var(--color-gold);
+}
+
+.st-craft-note span {
+    color: var(--color-gold);
+    font-family: var(--font-heading);
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+}
+
+.st-craft-note strong {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--color-forest);
+}
+
+/* =========================================================
+   SECTION 10 — PRESS
+   ========================================================= */
+
+.st-press {
+    position: relative;
+    padding: 6rem 0;
+    background: var(--color-forest);
+    overflow: hidden;
+}
+
+.st-press-head {
+    max-width: 1500px;
+    margin: 0 auto 2.5rem;
+    padding: 0 4rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.st-press-head .section-title {
+    color: var(--color-cream);
+}
+
+.st-press-grid {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    perspective: 1400px;
+}
+
+.st-press-card {
+    position: relative;
+    min-height: 300px;
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+    background: rgba(248, 246, 241, 0.06);
+    border: 1px solid rgba(248, 246, 241, 0.18);
+    transform-style: preserve-3d;
+    transition: transform 0.55s var(--ease-out-expo), background 0.4s, border-color 0.4s, box-shadow 0.55s;
+}
+
+.st-press-card:hover {
+    transform: translateY(-10px);
+    background: rgba(248, 246, 241, 0.1);
+    border-color: rgba(184, 149, 106, 0.65);
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.28);
+}
+
+.st-press-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(248, 246, 241, 0.14);
+}
+
+.st-press-logo {
+    color: var(--color-gold);
+    font-family: var(--font-heading);
+    font-size: 0.66rem;
+    letter-spacing: 0.16em;
+}
+
+.st-press-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: -0.35rem;
+    padding: 0.35rem;
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.st-press-arrow:focus-visible {
+    outline: 1px solid var(--color-gold);
+    outline-offset: 2px;
+}
+
+.st-press-top i {
+    color: rgba(248, 246, 241, 0.5);
+    font-size: 0.8rem;
+    transition: color 0.35s, transform 0.35s;
+}
+
+.st-press-card:hover .st-press-top i {
+    color: var(--color-gold);
+    transform: translate(3px, -3px);
+}
+
+.st-press-card blockquote {
+    font-family: var(--font-display);
+    font-size: clamp(1.35rem, 2.1vw, 1.85rem);
+    line-height: 1.35;
+    color: var(--color-cream);
+    transition: color 0.4s;
+}
+
+.st-press-card:hover blockquote {
+    color: var(--color-gold);
+}
+
+.st-press-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+.st-press-meta img {
+    width: 62px;
+    height: 62px;
+    flex: 0 0 auto;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid rgba(184, 149, 106, 0.45);
+    transition: transform 0.8s var(--ease-out-expo);
+}
+
+.st-press-card:hover .st-press-meta img {
+    transform: scale(1.1) rotate(4deg);
+}
+
+.st-press-meta span {
+    color: rgba(248, 246, 241, 0.55);
+    font-family: var(--font-heading);
+    font-size: 0.62rem;
+    letter-spacing: 0.14em;
+}
+
+/* =========================================================
+   SECTION 11 — VALUES
+   ========================================================= */
+
+.st-values {
+    position: relative;
+    padding: 6rem 0;
+    background: var(--color-cream);
+    overflow: hidden;
+}
+
+.st-values {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: clamp(3rem, 6vw, 6rem);
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.st-values-visual {
+    position: relative;
+    height: clamp(460px, 64vh, 680px);
+    overflow: hidden;
+    background: var(--color-olive);
+    cursor: crosshair;
+}
+
+.st-values-base {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.st-values-hole {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    width: 56%;
+    aspect-ratio: 1;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid rgba(248, 246, 241, 0.65);
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.25);
+    will-change: transform;
+}
+
+.st-values-hole img {
+    transform: scale(1.08);
+}
+
+.st-values-tag {
+    position: absolute;
+    top: 1.4rem;
+    left: 1.4rem;
+    z-index: 3;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.6rem 0.9rem;
+    background: rgba(15, 29, 22, 0.68);
+    backdrop-filter: blur(8px);
+    color: var(--color-cream);
+    font-family: var(--font-heading);
+    font-size: 0.62rem;
+    letter-spacing: 0.14em;
+    transition: background 0.4s, transform 0.4s;
+}
+
+.st-values-tag i {
+    color: var(--color-gold);
+}
+
+.st-values-visual:hover .st-values-tag {
+    background: var(--color-gold);
+    color: var(--color-forest);
+    transform: translateY(-4px);
+}
+
+.st-values-visual:hover .st-values-tag i {
+    color: var(--color-forest);
+}
+
+.st-values-hint {
+    position: absolute;
+    right: 1.4rem;
+    bottom: 1.4rem;
+    z-index: 3;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.55rem 0.8rem;
+    background: rgba(15, 29, 22, 0.62);
+    backdrop-filter: blur(8px);
+    color: rgba(248, 246, 241, 0.82);
+    font-family: var(--font-heading);
+    font-size: 0.58rem;
+    letter-spacing: 0.16em;
+}
+
+.st-values-hint i {
+    color: var(--color-gold);
+}
+
+.st-values-copy p {
+    color: var(--color-stone);
+    max-width: 540px;
+    margin-bottom: 2rem;
+}
+
+.st-stat-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1.6rem 0;
+    margin-bottom: 2rem;
+    border-top: 1px solid rgba(184, 149, 106, 0.35);
+    border-bottom: 1px solid rgba(184, 149, 106, 0.35);
+}
+
+.st-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.st-stat strong {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-weight: 400;
+    line-height: 1;
+    color: var(--color-gold);
+}
+
+.st-stat span {
+    color: var(--color-stone);
+    font-family: var(--font-heading);
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+/* =========================================================
+   RESPONSIVE — 1200
+   ========================================================= */
+
+@media (max-width: 1200px) {
+    .st-hero-inner,
+    .st-origin-grid,
+    .st-beliefs-head,
+    .st-timeline-head,
+    .st-founders-head,
+    .st-founders-stage,
+    .st-ethos-inner,
+    .st-destinations-head,
+    .st-craft-head,
+    .st-press-head,
+    .st-press-grid,
+    .st-values {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .st-craft-note {
+        left: 2.5rem;
+    }
+
+    .st-timeline {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .st-hero-mosaic {
+        grid-template-columns: 0.85fr 1.1fr 0.85fr;
+    }
+
+    .st-belief-stage {
+        height: 640px;
+    }
+
+    .st-belief-img {
+        height: 245px;
+    }
+
+    .st-compass {
+        transform: scale(0.9);
+        margin-top: -2rem;
+        margin-bottom: -2rem;
+    }
+}
+
+/* =========================================================
+   RESPONSIVE — 1024
+   ========================================================= */
+
+@media (max-width: 1024px) {
+    .st-hero-title {
+        font-size: clamp(3.4rem, 8.6vw, 6.5rem);
+    }
+
+    .st-hero-line--italic {
+        padding-right: 4%;
+    }
+
+    .st-origin-grid {
+        gap: 3rem;
+    }
+
+    .st-origin-frame {
+        height: 500px;
+    }
+
+    .st-belief-stage {
+        height: 600px;
+    }
+
+    .st-belief-slot {
+        width: 21%;
+    }
+
+    .st-belief-slot:nth-child(1) {
+        left: 7%;
+    }
+
+    .st-belief-slot:nth-child(2) {
+        left: 28.67%;
+    }
+
+    .st-belief-slot:nth-child(3) {
+        left: 50.33%;
+    }
+
+    .st-belief-slot:nth-child(4) {
+        left: 72%;
+    }
+
+    .st-belief-img {
+        height: 215px;
+    }
+
+    .st-mile-card {
+        grid-template-columns: 1fr;
+    }
+
+    .st-mile-img {
+        height: 210px;
+    }
+
+    .st-founders-stage {
+        gap: 2rem;
+    }
+
+    .st-founder-media {
+        height: 460px;
+    }
+
+    .st-founder-mark {
+        width: 120px;
+        height: 120px;
+        margin-left: -60px;
+        margin-top: -60px;
+        font-size: 0.54rem;
+    }
+
+    .st-ethos-inner {
+        gap: 3rem;
+    }
+
+    .st-ethos-swatches {
+        height: 370px;
+    }
+
+    .st-swatch {
+        height: 260px;
+    }
+
+    .st-swatch:nth-child(1) {
+        height: 300px;
+    }
+
+    .st-swatch:nth-child(2) {
+        height: 360px;
+    }
+
+    .st-swatch:nth-child(3) {
+        height: 250px;
+    }
+
+    .st-compass {
+        transform: scale(0.82);
+        margin-top: -4rem;
+        margin-bottom: -4rem;
+    }
+
+    .st-craft-deck {
+        height: 610px;
+    }
+
+    .st-craft-media {
+        height: 230px;
+    }
+
+    .st-values {
+        gap: 3rem;
+    }
+}
+
+/* =========================================================
+   RESPONSIVE — 900
+   ========================================================= */
+
+@media (max-width: 900px) {
+    .st-hero {
+        min-height: 0;
+        padding: 7rem 0 3rem;
+    }
+
+    .st-hero-inner,
+    .st-origin-grid,
+    .st-beliefs-head,
+    .st-timeline-head,
+    .st-founders-head,
+    .st-founders-stage,
+    .st-ethos-inner,
+    .st-destinations-head,
+    .st-craft-head,
+    .st-press-head,
+    .st-press-grid,
+    .st-values {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .st-hero-mosaic {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .st-hero-card--two {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        margin-top: 0;
+    }
+
+    .st-hero-card--one,
+    .st-hero-card--three {
+        margin-top: 0;
+    }
+
+    .st-hero-card--one {
+        order: 2;
+    }
+
+    .st-hero-card--three {
+        order: 3;
+    }
+
+    .st-hero-card--two .st-hero-card-img {
+        height: 330px;
+    }
+
+    .st-hero-card-img {
+        height: 210px;
+    }
+
+    .st-hero-foot {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .st-hero-title {
+        font-size: clamp(3rem, 11vw, 5.2rem);
+    }
+
+    .st-hero-line--italic {
+        align-self: flex-start;
+        padding-left: 12%;
+    }
+
+    .st-origin-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .st-origin-visual {
+        padding: 1rem;
+    }
+
+    .st-origin-frame {
+        height: 470px;
+    }
+
+    .st-origin-stamp {
+        right: 0.5rem;
+        bottom: 1rem;
+    }
+
+    .st-beliefs-head,
+    .st-destinations-head,
+    .st-craft-head {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .st-belief-stage {
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        padding: 0 2rem;
+    }
+
+    .st-belief-slot {
+        position: static;
+        width: auto;
+        transform: none !important;
+    }
+
+    .st-belief-card {
+        height: 100%;
+    }
+
+    .st-belief-img {
+        height: 240px;
+    }
+
+    .st-belief-card:hover {
+        transform: translateY(-10px);
+    }
+
+    .st-beliefs-hint {
+        margin-top: 2rem;
+    }
+
+    .st-timeline {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .st-timeline-rail {
+        left: 1.75rem;
+    }
+
+    .st-milestone,
+    .st-milestone--right {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 5rem;
+        padding-right: 0;
+        margin-bottom: 2.5rem;
+    }
+
+    .st-mile-year,
+    .st-milestone--right .st-mile-year {
+        left: 0;
+        right: auto;
+        top: 0;
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 0.8rem;
+    }
+
+    .st-mile-card {
+        grid-template-columns: 0.9fr 1.1fr;
+    }
+
+    .st-mile-img {
+        height: 220px;
+    }
+
+    .st-founders-stage {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding-bottom: 1rem;
+    }
+
+.st-founder--one,
+.st-founder--two {
+    margin-top: 0;
+}
+
+    .st-founder-media {
+        height: 480px;
+    }
+
+    .st-founder-mark {
+        display: none;
+    }
+
+    .st-founder-quote {
+        position: static;
+        transform: none;
+        background: rgba(184, 149, 106, 0.96);
+    }
+
+    .st-founder figcaption {
+        position: static;
+        padding: 1rem 1.2rem;
+        background: var(--color-forest);
+    }
+
+    .st-founder-media::after {
+        display: none;
+    }
+
+    .st-ethos {
+        min-height: 0;
+        padding: 5rem 0;
+    }
+
+    .st-ethos-overlay {
+        background: linear-gradient(180deg, rgba(15, 29, 22, 0.7) 0%, rgba(15, 29, 22, 0.92) 100%);
+    }
+
+    .st-ethos-inner {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .st-ethos-swatches {
+        height: 300px;
+    }
+
+    .st-swatch,
+    .st-swatch:nth-child(1),
+    .st-swatch:nth-child(2),
+    .st-swatch:nth-child(3) {
+        height: 280px;
+    }
+
+    .st-compass {
+        height: auto;
+        margin: 1rem auto 0;
+        padding: 0 2rem 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.25rem;
+        transform: none;
+    }
+
+    .st-compass-orbit,
+    .st-compass-note {
+        display: none;
+    }
+
+    .st-compass-center {
+        grid-column: 1 / -1;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .st-compass-center img {
+        width: min(330px, 78vw);
+        height: min(330px, 78vw);
+        margin: 0 auto;
+    }
+
+    .st-dest-node,
+    .st-dest-node--one,
+    .st-dest-node--two,
+    .st-dest-node--three,
+    .st-dest-node--four {
+        position: static;
+        width: 100%;
+        justify-content: flex-start;
+        padding: 0.5rem;
+    }
+
+    .st-dest-label {
+        white-space: normal;
+        text-align: left;
+    }
+
+    .st-craft-deck {
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        padding: 0 2rem;
+    }
+
+    .st-craft-slot {
+        position: static;
+        width: auto;
+        transform: none !important;
+    }
+
+    .st-craft-note {
+        position: static;
+        grid-column: 1 / -1;
+        margin-top: 0.5rem;
+    }
+
+    .st-press-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .st-press-card {
+        min-height: 0;
+    }
+
+    .st-values {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .st-values-visual {
+        height: 460px;
+        cursor: default;
+    }
+
+    .st-values-hole {
+        width: 58%;
+    }
+
+    .st-values-hint {
+        display: none;
+    }
+}
+
+/* =========================================================
+   RESPONSIVE — 768
+   ========================================================= */
+
+@media (max-width: 768px) {
+    .st-hero-title {
+        font-size: clamp(2.9rem, 12vw, 4.4rem);
+    }
+
+    .st-hero-top {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .st-hero-card--two .st-hero-card-img {
+        height: 280px;
+    }
+
+    .st-hero-card-img {
+        height: 180px;
+    }
+
+    .st-hero-card figcaption {
+        font-size: 0.62rem;
+    }
+
+    .st-origin-frame {
+        height: 400px;
+    }
+
+    .st-belief-stage {
+        grid-template-columns: 1fr;
+    }
+
+    .st-belief-img {
+        height: 250px;
+    }
+
+    .st-mile-card {
+        grid-template-columns: 1fr;
+    }
+
+    .st-mile-img {
+        height: 220px;
+    }
+
+    .st-founder-media {
+        height: 420px;
+    }
+
+    .st-ethos-swatches {
+        height: 250px;
+    }
+
+    .st-swatch,
+    .st-swatch:nth-child(1),
+    .st-swatch:nth-child(2),
+    .st-swatch:nth-child(3) {
+        height: 230px;
+    }
+
+    .st-craft-deck {
+        grid-template-columns: 1fr;
+    }
+
+    .st-craft-media {
+        height: 250px;
+    }
+
+    .st-values-visual {
+        height: 420px;
+    }
+
+    .st-stat-row {
+        gap: 0.75rem;
+    }
+
+    .st-stat strong {
+        font-size: 1.8rem;
+    }
+
+    .st-stat span {
+        font-size: 0.56rem;
+    }
+}
+
+/* =========================================================
+   RESPONSIVE — 640
+   ========================================================= */
+
+@media (max-width: 640px) {
+    .st-hero {
+        padding: 6.5rem 0 2.5rem;
+    }
+
+    .st-hero-inner,
+    .st-origin-grid,
+    .st-beliefs-head,
+    .st-timeline-head,
+    .st-founders-head,
+    .st-founders-stage,
+    .st-ethos-inner,
+    .st-destinations-head,
+    .st-craft-head,
+    .st-press-head,
+    .st-press-grid,
+    .st-values {
+        padding-left: 1.35rem;
+        padding-right: 1.35rem;
+    }
+
+    .st-hero-title {
+        font-size: clamp(2.55rem, 13.5vw, 3.6rem);
+    }
+
+    .st-hero-line--italic {
+        padding-left: 5%;
+    }
+
+    .st-hero-mosaic {
+        gap: 0.75rem;
+    }
+
+    .st-hero-card--two .st-hero-card-img {
+        height: 240px;
+    }
+
+    .st-hero-card-img {
+        height: 150px;
+    }
+
+    .st-hero-card figcaption {
+        gap: 0.35rem;
+        padding-top: 0.55rem;
+        font-size: 0.55rem;
+    }
+
+    .st-hero-foot p {
+        font-size: 0.9rem;
+    }
+
+    .st-origin,
+    .st-beliefs,
+    .st-timeline-section,
+    .st-founders,
+    .st-destinations,
+    .st-craft,
+    .st-press {
+        padding-top: 4.5rem;
+        padding-bottom: 4.5rem;
+    }
+
+    .st-origin-visual {
+        padding: 0.6rem;
+    }
+
+    .st-origin-frame {
+        height: 330px;
+    }
+
+    .st-origin-stamp {
+        padding: 0.75rem 0.9rem;
+        font-size: 0.6rem;
+    }
+
+    .st-origin-count {
+        font-size: 0.6rem;
+    }
+
+    .st-dropcap::first-letter {
+        font-size: 3.4rem;
+    }
+
+    .st-belief-stage {
+        padding: 0 1.35rem;
+        gap: 1.25rem;
+    }
+
+    .st-belief-img {
+        height: 220px;
+    }
+
+    .st-belief-copy {
+        padding: 1.2rem 1.1rem 1.35rem;
+    }
+
+    .st-timeline {
+        padding-left: 0.75rem;
+        padding-right: 1.35rem;
+    }
+
+    .st-timeline-rail {
+        left: 1rem;
+    }
+
+    .st-milestone,
+    .st-milestone--right {
+        padding-left: 3.8rem;
+    }
+
+    .st-mile-year,
+    .st-milestone--right .st-mile-year {
+        width: 2.8rem;
+        height: 2.8rem;
+        font-size: 0.68rem;
+    }
+
+    .st-mile-img {
+        height: 200px;
+    }
+
+    .st-mile-copy {
+        padding: 1.3rem 1.1rem;
+    }
+
+    .st-founder-media {
+        height: 360px;
+    }
+
+    .st-founder-quote p {
+        font-size: 0.95rem;
+    }
+
+    .st-ethos {
+        padding: 4.5rem 0;
+    }
+
+    .st-ethos-swatches {
+        height: 180px;
+        gap: 0.6rem;
+    }
+
+    .st-swatch,
+    .st-swatch:nth-child(1),
+    .st-swatch:nth-child(2),
+    .st-swatch:nth-child(3) {
+        height: 170px;
+    }
+
+    .st-swatch figcaption {
+        left: 0.5rem;
+        bottom: 0.5rem;
+        padding: 0.35rem 0.5rem;
+        font-size: 0.54rem;
+    }
+
+    .st-compass {
+        padding-left: 1.35rem;
+        padding-right: 1.35rem;
+        gap: 1rem;
+    }
+
+    .st-compass-center img {
+        width: min(280px, 76vw);
+        height: min(280px, 76vw);
+    }
+
+    .st-compass-center figcaption strong {
+        font-size: 1.3rem;
+    }
+
+    .st-dest-thumb {
+        width: 52px;
+        height: 52px;
+    }
+
+    .st-dest-label {
+        font-size: 0.64rem;
+    }
+
+    .st-craft-deck {
+        padding: 0 1.35rem;
+        gap: 1.25rem;
+    }
+
+    .st-craft-note {
+        left: 0;
+    }
+
+    .st-craft-media {
+        height: 230px;
+    }
+
+    .st-press-grid {
+        gap: 1rem;
+    }
+
+    .st-press-card {
+        padding: 1.35rem;
+    }
+
+    .st-press-meta img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .st-values {
+        padding-left: 1.35rem;
+        padding-right: 1.35rem;
+        padding-top: 4.5rem;
+        padding-bottom: 4.5rem;
+    }
+
+    .st-values-visual {
+        height: 340px;
+    }
+
+    .st-values-hole {
+        width: 62%;
+    }
+
+    .st-values-tag {
+        top: 0.9rem;
+        left: 0.9rem;
+        padding: 0.45rem 0.65rem;
+        font-size: 0.54rem;
+    }
+
+    .st-stat-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .st-stat:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .st-stat strong {
+        font-size: 1.9rem;
+    }
+}
+
+/* =========================================================
+   STORY REFINEMENTS
+   ========================================================= */
+
+.st-hero-line--italic {
+    align-self: flex-start;
+    padding-right: 0;
+    padding-left: 0.08em;
+}
+
+.st-founders-stage {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.5rem;
+    align-items: stretch;
+}
+
+.st-founder {
+    height: 100%;
+}
+
+.st-founder--one,
+.st-founder--two {
+    margin-top: 0;
+}
+
+.st-origin,
+.st-timeline-section,
+.st-founders,
+.st-press {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.st-beliefs {
+    padding: 5rem 0 4rem;
+}
+
+.st-ethos {
+    padding: 6rem 0;
+}
+
+.st-postcards {
+    position: relative;
+    padding: 5rem 0 4rem;
+    background: var(--color-ivory);
+    overflow: hidden;
+}
+
+.st-postcards-head {
+    max-width: 1500px;
+    margin: 0 auto 2.5rem;
+    padding: 0 4rem;
+    display: grid;
+    grid-template-columns: 0.55fr 1.45fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.st-postcards-heading {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 3rem;
+    align-items: end;
+}
+
+.st-postcards-heading p {
+    max-width: 420px;
+    color: var(--color-stone);
+}
+
+.st-postcard-stage {
+    position: relative;
+    overflow: hidden;
+    padding: 1.5rem 0 2rem;
+}
+
+.st-postcard-track {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    width: max-content;
+    padding: 0 4rem;
+    will-change: transform;
+}
+
+.st-postcard {
+    --tilt: 0deg;
+    flex: 0 0 clamp(280px, 26vw, 360px);
+    transform: rotate(var(--tilt));
+    transition: transform 0.6s var(--ease-out-expo);
+}
+
+.st-postcard:nth-child(odd) {
+    --tilt: -1.4deg;
+    margin-top: 1.5rem;
+}
+
+.st-postcard:nth-child(even) {
+    --tilt: 1.2deg;
+    margin-top: 0;
+}
+
+.st-postcard:nth-child(3n) {
+    --tilt: 0.8deg;
+    margin-top: 2.4rem;
+}
+
+.st-postcard:hover {
+    transform: rotate(0deg) translateY(-12px);
+}
+
+.st-postcard-media {
+    position: relative;
+    height: clamp(320px, 33vw, 430px);
+    overflow: hidden;
+    background: var(--color-olive);
+    border: 1px solid rgba(184, 149, 106, 0.3);
+    box-shadow: 0 24px 50px -34px rgba(15, 29, 22, 0.55);
+}
+
+.st-postcard-media > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(0.9);
+    transition: transform 1.2s var(--ease-out-expo), filter 0.6s;
+}
+
+.st-postcard:hover .st-postcard-media > img {
+    transform: scale(1.06);
+    filter: saturate(1.05);
+}
+
+.st-postcard-pin {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 2;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(252, 251, 247, 0.9);
+    color: var(--color-forest);
+    font-size: 0.8rem;
+    transition: transform 0.5s var(--ease-out-expo), background 0.4s;
+}
+
+.st-postcard:hover .st-postcard-pin {
+    transform: rotate(-12deg) scale(1.08);
+    background: var(--color-gold);
+}
+
+.st-postcard-note {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    padding: 2.5rem 1.2rem 1.1rem;
+    background: linear-gradient(to top, rgba(15, 29, 22, 0.94), rgba(15, 29, 22, 0.55) 55%, transparent);
+    color: var(--color-cream);
+    opacity: 0;
+    transform: translateY(101%);
+    transition: transform 0.55s var(--ease-out-expo), opacity 0.4s;
+}
+
+.st-postcard:hover .st-postcard-note {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.st-postcard-note p {
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+
+.st-postcard-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 1.1rem 0.2rem 0;
+}
+
+.st-postcard-meta span {
+    color: var(--color-gold);
+    font-family: var(--font-heading);
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+}
+
+.st-postcard-meta h3 {
+    color: var(--color-forest);
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.st-postcard-meta em {
+    color: var(--color-stone);
+    font-size: 0.72rem;
+    font-style: normal;
+    letter-spacing: 0.04em;
+}
+
+.st-postcards-foot {
+    max-width: 1500px;
+    margin: 1.5rem auto 0;
+    padding: 0 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    color: var(--color-stone);
+    font-family: var(--font-heading);
+    font-size: 0.64rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.st-postcards-foot i {
+    margin-right: 0.4rem;
+    color: var(--color-gold);
+}
+
+.st-postcards-foot .st-text-link {
+    color: var(--color-forest);
+}
+
+.st-craft {
+    padding-top: 5rem;
+    padding-bottom: 3.5rem;
+}
+
+.st-values {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+@media (max-width: 1024px) {
+    .st-hero-line--italic {
+        padding-right: 0;
+        padding-left: 0.08em;
+    }
+
+    .st-postcards-heading {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .st-hero-line--italic {
+        align-self: flex-start;
+        padding-left: 0.08em;
+    }
+
+    .st-founders-stage {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.25rem;
+        padding-bottom: 1rem;
+    }
+
+    .st-founder-media {
+        height: 380px;
+    }
+
+    .st-founder figcaption {
+        padding: 0.9rem 1rem;
+    }
+
+    .st-founder-quote {
+        padding: 1rem;
+    }
+
+    .st-origin,
+    .st-timeline-section,
+    .st-founders,
+    .st-press {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .st-beliefs {
+        padding: 4rem 0 3.25rem;
+    }
+
+    .st-ethos {
+        padding: 4.5rem 0;
+    }
+
+    .st-postcards {
+        padding: 4rem 0 3.25rem;
+    }
+
+    .st-postcards-head {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 2rem;
+        margin-bottom: 1.75rem;
+    }
+
+    .st-postcards-heading {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .st-postcard-stage {
+        overflow: hidden;
+        padding: 0.5rem 0 1.5rem;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .st-postcard-stage::-webkit-scrollbar {
+        display: none;
+    }
+
+    .st-postcard-track {
+        gap: 1.25rem;
+        padding: 0 2rem 0.75rem;
+    }
+
+    .st-postcard {
+        --tilt: 0deg;
+        flex-basis: min(78vw, 340px);
+        margin-top: 0 !important;
+    }
+
+    .st-postcard:hover {
+        transform: translateY(-8px);
+    }
+
+    .st-postcard-media {
+        height: 360px;
+    }
+
+    .st-postcard-note {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .st-postcards-foot {
+        padding: 0 2rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .st-craft {
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+
+    .st-values {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .st-hero-line--italic {
+        padding-left: 0.08em;
+    }
+
+    .st-founders-stage {
+        gap: 0.75rem;
+    }
+
+    .st-founder-media {
+        height: 280px;
+    }
+
+    .st-founder figcaption {
+        gap: 0.2rem;
+        padding: 0.65rem 0.7rem;
+    }
+
+    .st-founder figcaption span {
+        font-size: 0.52rem;
+    }
+
+    .st-founder figcaption strong {
+        font-size: 1rem;
+    }
+
+    .st-founder-quote {
+        padding: 0.75rem 0.7rem;
+    }
+
+    .st-founder-quote i {
+        margin-bottom: 0.3rem;
+        font-size: 0.65rem;
+    }
+
+    .st-founder-quote p {
+        font-size: 0.75rem;
+        line-height: 1.4;
+    }
+
+    .st-origin,
+    .st-timeline-section,
+    .st-founders,
+    .st-press {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+
+    .st-beliefs {
+        padding: 3.5rem 0 3rem;
+    }
+
+    .st-ethos {
+        padding: 3.5rem 0;
+    }
+
+    .st-postcards {
+        padding: 3.5rem 0 3rem;
+    }
+
+    .st-postcards-head {
+        padding: 0 1.35rem;
+    }
+
+    .st-postcard-track {
+        padding: 0 1.35rem 0.75rem;
+    }
+
+    .st-postcard {
+        flex-basis: min(82vw, 320px);
+    }
+
+    .st-postcard-media {
+        height: 330px;
+    }
+
+    .st-postcards-foot {
+        padding: 0 1.35rem;
+    }
+
+    .st-craft {
+        padding-top: 3.5rem;
+        padding-bottom: 2.75rem;
+    }
+
+    .st-values {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+}
+
+/* =========================================================
+   FOUNDERS / FIELD NOTES FINAL FIXES
+   ========================================================= */
+
+.st-founder {
+    min-width: 0;
+    overflow: hidden;
+}
+
+.st-founders-stage {
+    align-items: stretch;
+}
+
+.st-founder--one,
+.st-founder--two {
+    margin-top: 0;
+}
+
+/* =========================================================
+   HERO / FIELD NOTES / HEADING ALIGNMENT PASS
+   ========================================================= */
+
+.st-hero-title {
+    width: max-content;
+    max-width: 100%;
+}
+
+.st-hero-line--italic {
+    align-self: stretch;
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
+}
+
+.story-page .section-subtitle {
+    margin-bottom: 0;
+}
+
+.story-page .section-title {
+    max-width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 1.08;
+    text-wrap: balance;
+}
+
+.st-origin-copy,
+.st-beliefs-head,
+.st-timeline-head,
+.st-founders-head,
+.st-ethos-copy,
+.st-postcards-head,
+.st-postcards-heading,
+.st-craft-head,
+.st-press-head,
+.st-values-copy {
+    text-align: center;
+}
+
+.st-beliefs-head,
+.st-timeline-head,
+.st-founders-head,
+.st-postcards-head,
+.st-postcards-heading,
+.st-craft-head,
+.st-press-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+.st-beliefs-head,
+.st-timeline-head,
+.st-founders-head,
+.st-postcards-head,
+.st-craft-head,
+.st-press-head {
+    margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+.st-origin-copy p,
+.st-beliefs-head p,
+.st-founders-head p,
+.st-ethos-copy p,
+.st-postcards-heading p,
+.st-craft-head p,
+.st-values-copy p {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.st-beliefs-head p,
+.st-founders-head p,
+.st-craft-head p {
+    max-width: 620px;
+}
+
+.st-origin,
+.st-beliefs,
+.st-timeline-section,
+.st-founders,
+.st-ethos,
+.st-postcards,
+.st-craft,
+.st-press,
+.st-values {
+    padding-top: clamp(3.5rem, 6vw, 5rem);
+    padding-bottom: clamp(3.5rem, 6vw, 5rem);
+}
+
+@media (min-width: 901px) {
+    .st-postcard-stage {
+        display: flex;
+        align-items: center;
+        min-height: calc(100vh - 76px);
+        padding-top: clamp(1rem, 2.5vh, 2rem);
+        padding-bottom: clamp(2rem, 4vh, 3rem);
+    }
+
+    .st-postcard-track {
+        align-items: flex-start;
+    }
+
+    .st-postcard-media {
+        height: clamp(280px, calc(100vh - 330px), 430px);
+    }
+}

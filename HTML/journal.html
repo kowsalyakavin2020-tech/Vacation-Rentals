@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal | Stackly</title>
+    <link rel="icon" type="image/webp" href="../images/icon.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Manrope:wght@300;400;500;600;700&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/home.css?v=20261109">
+    <link rel="stylesheet" href="../CSS/journal.css">
+</head>
+
+<body class="journal-page">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <a href="../index.html" class="preloader-brand" aria-label="Stackly home"><img src="../images/logo-full-theme.webp" alt="Stackly"></a>
+            <div class="preloader-bars">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 1: Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="../index.html" class="header-logo"><img src="../images/logo-full-theme.webp" alt="Stackly"></a>
+            <nav class="header-nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="story.html" class="nav-link">Story</a>
+                <a href="experiences.html" class="nav-link">Experiences</a>
+                <a href="journal.html" class="nav-link is-active" aria-current="page">Journal</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <a href="login.html" class="header-cta">Login</a>
+            <button class="hamburger" id="hamburger" type="button" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-bg"></div>
+        <button class="mobile-close" id="mobileClose" type="button" aria-label="Close menu"><i class="fas fa-times"></i></button>
+        <a href="../index.html" class="mobile-logo" aria-label="Stackly home"><img src="../images/logo-full-theme.webp" alt="Stackly"></a>
+        <nav class="mobile-nav">
+            <a href="../index.html" class="mobile-link">Home</a>
+            <a href="story.html" class="mobile-link">Story</a>
+            <a href="experiences.html" class="mobile-link">Experiences</a>
+            <a href="journal.html" class="mobile-link is-active" aria-current="page">Journal</a>
+            <a href="contact.html" class="mobile-link">Contact</a>
+            <a href="login.html" class="mobile-link mobile-link--cta">Login</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Section 2: Hero -->
+        <section class="jr-hero">
+            <div class="jr-hero-bg">
+                <img src="../images/r22.webp" alt="Coastal morning at a Stackly villa">
+            </div>
+            <div class="jr-hero-veil"></div>
+
+            <div class="jr-hero-inner">
+                <div class="jr-hero-copy">
+                    <span class="section-subtitle light">THE STACKLY JOURNAL</span>
+                    <h1 class="jr-hero-title">
+                        <span class="jr-hero-line"><span>NOTES</span></span>
+                        <span class="jr-hero-line"><span>FROM</span></span>
+                        <span class="jr-hero-line jr-hero-line--italic"><em>elsewhere</em></span>
+                    </h1>
+                    <p class="jr-hero-text">Stories found on quiet roads, at long tables, and in the rooms we never wanted to leave. A journal about the places that stay with us.</p>
+                    <div class="jr-hero-meta">
+                        <span><i class="fas fa-pen-nib"></i> ISSUE 01 / SPRING 2026</span>
+                        <a href="404.html" class="jr-btn jr-btn--light">
+                            <span>Read the issue</span>
+                            <i class="fas fa-arrow-down"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <figure class="jr-hero-cover">
+                    <img src="../images/r23.webp" alt="A quiet corner of a guest villa">
+                    <figcaption>
+                        <span>COVER STORY</span>
+                        <strong>The rooms that hold us</strong>
+                        <em><i class="fas fa-clock"></i> 8 min read</em>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="jr-hero-marquee" aria-label="Featured journal stories">
+                <div class="jr-hero-track">
+                    <figure><img src="../images/r20.webp" alt="Quiet travel moment in the shade"><figcaption>QUIET CORNERS</figcaption></figure>
+                    <figure><img src="../images/r31.webp" alt="Ceramicist at work"><figcaption>MADE BY HAND</figcaption></figure>
+                    <figure><img src="../images/r34.webp" alt="Local guide on a coastal path"><figcaption>WALK SLOWLY</figcaption></figure>
+                    <figure><img src="../images/r35.webp" alt="Sunlit coastal landscape"><figcaption>IN THE CITY</figcaption></figure>
+                    <figure aria-hidden="true"><img src="../images/r20.webp" alt=""><figcaption>QUIET CORNERS</figcaption></figure>
+                    <figure aria-hidden="true"><img src="../images/r31.webp" alt=""><figcaption>MADE BY HAND</figcaption></figure>
+                    <figure aria-hidden="true"><img src="../images/r34.webp" alt=""><figcaption>WALK SLOWLY</figcaption></figure>
+                    <figure aria-hidden="true"><img src="../images/r35.webp" alt=""><figcaption>IN THE CITY</figcaption></figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Editor's Note -->
+        <section class="jr-note">
+            <div class="jr-note-inner">
+                <div class="jr-note-copy">
+                    <span class="section-subtitle">FROM THE EDITOR</span>
+                    <h2 class="section-title">In praise of<br><span class="title-italic">going nowhere</span></h2>
+                    <p class="jr-note-lede"><span class="jr-dropcap">W</span>e spend so much time asking where to go next that we forget to ask what a place is doing to us. This issue is an argument for staying a little longer.</p>
+                    <p>It is about the second coffee, the walk you take without a destination, and the conversation that begins after the plates have been cleared. Travel, at its best, is not a list of arrivals. It is a change in attention.</p>
+                    <a href="404.html" class="jr-link">
+                        <span>Continue reading</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="jr-note-visual">
+                    <figure class="jr-note-main">
+                        <img src="../images/r20.webp" alt="A quiet travel moment in the shade">
+                    </figure>
+                    <figure class="jr-note-inset">
+                        <img src="../images/r38.webp" alt="A quiet villa detail">
+                    </figure>
+                    <span class="jr-note-stamp"><i class="fas fa-feather-pointed"></i> WORDS BY ELENA</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Latest Stories -->
+        <section id="latest" class="jr-latest">
+            <div class="jr-latest-inner">
+                <div class="jr-latest-head">
+                    <div>
+                        <span class="section-subtitle">THE LATEST</span>
+                        <h2 class="section-title">Freshly<br><span class="title-italic">noted</span></h2>
+                    </div>
+                    <div class="jr-latest-intro">
+                        <p>New dispatches from the coast, the kitchen, and the roads between. Read them slowly.</p>
+                        <a href="404.html" class="jr-link"><span>All stories</span><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="jr-story-grid">
+                    <article class="jr-story-card jr-story-card--feature">
+                        <a href="404.html" class="jr-story-link">
+                            <figure class="jr-story-media">
+                                <img src="../images/r23.webp" alt="A quiet corner of a guest villa">
+                                <span class="jr-story-tag">SPACES</span>
+                            </figure>
+                            <div class="jr-story-body">
+                                <span class="jr-story-meta">STORY 01 <i class="fas fa-circle"></i> 8 MIN READ</span>
+                                <h3>The rooms that hold us</h3>
+                                <p>Why the best rooms are not the largest ones, and how a well-placed chair can change the way a house behaves.</p>
+                                <span class="jr-story-arrow"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="jr-story-card">
+                        <a href="404.html" class="jr-story-link">
+                            <figure class="jr-story-media">
+                                <img src="../images/r31.webp" alt="Ceramicist at work">
+                                <span class="jr-story-tag">PEOPLE</span>
+                            </figure>
+                            <div class="jr-story-body">
+                                <span class="jr-story-meta">STORY 02 <i class="fas fa-circle"></i> 6 MIN READ</span>
+                                <h3>The hands that make a table</h3>
+                                <p>A morning with the ceramicist whose cups end up in every Stackly kitchen.</p>
+                                <span class="jr-story-arrow"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="jr-story-card">
+                        <a href="404.html" class="jr-story-link">
+                            <figure class="jr-story-media">
+                                <img src="../images/r34.webp" alt="Local guide on a coastal path">
+                                <span class="jr-story-tag">PLACES</span>
+                            </figure>
+                            <div class="jr-story-body">
+                                <span class="jr-story-meta">STORY 03 <i class="fas fa-circle"></i> 5 MIN READ</span>
+                                <h3>The path without a name</h3>
+                                <p>A local guide, an unmarked trail, and the cove that never appears on a map.</p>
+                                <span class="jr-story-arrow"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Photo Essay -->
+        <section class="jr-essay">
+            <div class="jr-essay-head">
+                <span class="section-subtitle light">PHOTO ESSAY</span>
+                <h2 class="section-title light">A study in<br><span class="title-italic">slowness</span></h2>
+            </div>
+
+            <div class="jr-essay-grid">
+                <figure class="jr-essay-img jr-essay-img--a">
+                    <img src="../images/r26.webp" alt="Summer villa framed by nature">
+                    <figcaption><span>01</span> The view before the day begins</figcaption>
+                </figure>
+
+                <div class="jr-essay-copy">
+                    <span class="jr-essay-kicker"><i class="fas fa-camera"></i> FIELD NOTES</span>
+                    <p>Four mornings in the same house, photographed at the same hour. Nothing happened, and that was the point.</p>
+                    <a href="404.html" class="jr-link jr-link--light"><span>See the full essay</span><i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <figure class="jr-essay-img jr-essay-img--b">
+                    <img src="../images/r16.webp" alt="Garden path with greenery">
+                    <figcaption><span>02</span> A path that asks you to wander</figcaption>
+                </figure>
+
+                <figure class="jr-essay-img jr-essay-img--c">
+                    <img src="../images/r24.webp" alt="Poolside calm after dark">
+                    <figcaption><span>03</span> The pool after everyone leaves</figcaption>
+                </figure>
+
+                <figure class="jr-essay-img jr-essay-img--d">
+                    <img src="../images/r40.webp" alt="Local landscape protected by Stackly">
+                    <figcaption><span>04</span> Land left exactly as it was</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Section 6: Interview -->
+        <section class="jr-interview">
+            <div class="jr-interview-inner">
+                <figure class="jr-interview-portrait">
+                    <img src="../images/r33.webp" alt="Founder Marco with local hosts">
+                    <figcaption>
+                        <span>THE CONVERSATION</span>
+                        <strong>Marco De Luca</strong>
+                        <em>Co-founder, Stackly</em>
+                    </figcaption>
+                </figure>
+
+                <div class="jr-interview-copy">
+                    <span class="section-subtitle">THE CONVERSATION</span>
+                    <blockquote>“A house should remember who walked through it.”</blockquote>
+                    <p class="jr-interview-by">Marco on finding homes with a memory, the sound of a good kitchen, and why he never trusts a perfect photograph.</p>
+                    <div class="jr-interview-lines">
+                        <div class="jr-qa-item">
+                            <button class="jr-qa-question" type="button" aria-expanded="false">
+                                <span class="jr-qa-num">01</span>
+                                <span class="jr-qa-text">What makes a house feel lived in before you arrive?</span>
+                                <span class="jr-qa-icon"><i class="fas fa-plus"></i></span>
+                            </button>
+                            <div class="jr-qa-answer">
+                                <p>It is never one thing. It is the worn edge of a table, a kitchen that still smells of the last meal, and the sense that someone has left the windows open on purpose. A house feels lived in when it has been allowed to keep its habits.</p>
+                            </div>
+                        </div>
+                        <div class="jr-qa-item">
+                            <button class="jr-qa-question" type="button" aria-expanded="false">
+                                <span class="jr-qa-num">02</span>
+                                <span class="jr-qa-text">How do you know when a place has enough silence?</span>
+                                <span class="jr-qa-icon"><i class="fas fa-plus"></i></span>
+                            </button>
+                            <div class="jr-qa-answer">
+                                <p>Silence is not the absence of sound. It is the moment the house stops asking you to do something—no clock, no screen, no corridor telling you where to go. I know a place has enough when I can hear the garden.</p>
+                            </div>
+                        </div>
+                        <div class="jr-qa-item">
+                            <button class="jr-qa-question" type="button" aria-expanded="false">
+                                <span class="jr-qa-num">03</span>
+                                <span class="jr-qa-text">What is the first room you notice in a new home?</span>
+                                <span class="jr-qa-icon"><i class="fas fa-plus"></i></span>
+                            </button>
+                            <div class="jr-qa-answer">
+                                <p>The kitchen, always. Not for the appliances, but for the way people gather there without being asked. If the kitchen is generous, the rest of the house usually follows.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="404.html" class="jr-link"><span>Read the interview</span><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: The Slow List -->
+        <section class="jr-list">
+            <div class="jr-list-inner">
+                <div class="jr-list-head">
+                    <span class="section-subtitle light">THE SLOW LIST</span>
+                    <h2 class="section-title light">Places to<br><span class="title-italic">linger</span></h2>
+                    <p>Not a ranking. Just four places we keep returning to when the only plan is to stay a little longer.</p>
+                </div>
+
+                <div class="jr-list-body">
+                    <figure class="jr-list-visual">
+                        <img id="jrListImage" src="../images/r34.webp" alt="Local guide on a coastal path">
+                        <figcaption>
+                            <span id="jrListPlace">THE COASTAL PATH</span>
+                            <strong id="jrListTitle">Walk until the map ends</strong>
+                        </figcaption>
+                    </figure>
+
+                    <div class="jr-list-items">
+                        <button class="jr-list-item is-active" type="button" data-img="../images/r34.webp" data-place="THE COASTAL PATH" data-title="Walk until the map ends">
+                            <span class="jr-list-index">01</span>
+                            <span class="jr-list-text">
+                                <strong>A path above the sea</strong>
+                                <em>Liguria, Italy</em>
+                                <span>Go early. The light is better and the only sound is your own footsteps.</span>
+                            </span>
+                            <figure class="jr-list-thumb"><img src="../images/r34.webp" alt="Local guide on a coastal path"></figure>
+                            <i class="fas fa-arrow-up-right jr-list-arrow"></i>
+                        </button>
+
+                        <button class="jr-list-item" type="button" data-img="../images/r35.webp" data-place="THE QUIET CITY" data-title="A city without a list">
+                            <span class="jr-list-index">02</span>
+                            <span class="jr-list-text">
+                                <strong>A city on foot</strong>
+                                <em>Lisbon, Portugal</em>
+                                <span>Leave the guidebook at the hotel. Follow the washing lines and the smell of coffee.</span>
+                            </span>
+                            <figure class="jr-list-thumb"><img src="../images/r35.webp" alt="Sunlit coastal landscape"></figure>
+                            <i class="fas fa-arrow-up-right jr-list-arrow"></i>
+                        </button>
+
+                        <button class="jr-list-item" type="button" data-img="../images/r36.webp" data-place="THE WINTER COAST" data-title="The sea in another season">
+                            <span class="jr-list-index">03</span>
+                            <span class="jr-list-text">
+                                <strong>Winter by the water</strong>
+                                <em>Cornwall, England</em>
+                                <span>The crowds leave, the light stays, and the coast becomes yours again.</span>
+                            </span>
+                            <figure class="jr-list-thumb"><img src="../images/r36.webp" alt="Winter light over the coast"></figure>
+                            <i class="fas fa-arrow-up-right jr-list-arrow"></i>
+                        </button>
+
+                        <button class="jr-list-item" type="button" data-img="../images/r40.webp" data-place="THE OPEN LAND" data-title="A field with no agenda">
+                            <span class="jr-list-index">04</span>
+                            <span class="jr-list-text">
+                                <strong>The inland road</strong>
+                                <em>Umbria, Italy</em>
+                                <span>Drive until the villages thin out. Stop where the view asks you to.</span>
+                            </span>
+                            <figure class="jr-list-thumb"><img src="../images/r40.webp" alt="Local landscape protected by Stackly"></figure>
+                            <i class="fas fa-arrow-up-right jr-list-arrow"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Objects -->
+        <section class="jr-objects">
+            <div class="jr-objects-inner">
+                <div class="jr-objects-head">
+                    <span class="section-subtitle">OBJECTS OF ATTENTION</span>
+                    <h2 class="section-title">The things<br><span class="title-italic">we keep</span></h2>
+                    <p>Small objects with long stories. Made by hand, used every day, and never entirely finished.</p>
+                </div>
+
+                <div class="jr-object-grid">
+                    <figure class="jr-object jr-object--one">
+                        <div class="jr-object-media"><img src="../images/r31.webp" alt="Ceramicist at work"></div>
+                        <figcaption><span>01 / CERAMICS</span><strong>The hand-thrown cup</strong><em>Made for the second coffee.</em></figcaption>
+                    </figure>
+
+                    <figure class="jr-object jr-object--two">
+                        <div class="jr-object-media"><img src="../images/r37.webp" alt="Linen and interior detail"></div>
+                        <figcaption><span>02 / TEXTILES</span><strong>The linen that softens</strong><em>Better after every wash.</em></figcaption>
+                    </figure>
+
+                    <figure class="jr-object jr-object--three">
+                        <div class="jr-object-media"><img src="../images/r18.webp" alt="Natural materials and architectural detail"></div>
+                        <figcaption><span>03 / STONE</span><strong>The step worn smooth</strong><em>A hundred years of arrivals.</em></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 9: The Sunday Table -->
+        <section class="jr-recipe">
+            <figure class="jr-recipe-visual">
+                <img src="../images/r19.webp" alt="A table of local food">
+                <figcaption><span>THE SUNDAY TABLE</span><strong>Lunch is a place, too</strong></figcaption>
+                <figure class="jr-recipe-inset">
+                    <img src="../images/r6.webp" alt="Local produce and ingredients">
+                </figure>
+            </figure>
+
+            <div class="jr-recipe-copy">
+                <span class="section-subtitle">A RECIPE FOR STAYING</span>
+                <h2 class="section-title">Nothing to do,<br><span class="title-italic">nowhere to be</span></h2>
+                <p>The Sunday table is less a meal than a decision. Here is how we set ours.</p>
+
+                <ol class="jr-steps">
+                    <li>
+                        <span>01</span>
+                        <div><strong>Start with the market</strong><p>Buy what looks good, not what the recipe asks for. Let the table begin there.</p></div>
+                    </li>
+                    <li>
+                        <span>02</span>
+                        <div><strong>Set one long table</strong><p>Enough room for elbows, serving dishes, and someone who arrives late.</p></div>
+                    </li>
+                    <li>
+                        <span>03</span>
+                        <div><strong>Forget the clock</strong><p>Clear the plates when the light changes. Not before.</p></div>
+                    </li>
+                </ol>
+
+                <div class="jr-recipe-note"><i class="fas fa-wine-glass"></i> Best served with a local wine and no plans after.</div>
+            </div>
+        </section>
+
+        <!-- Section 10: Contributors -->
+        <section class="jr-contributors">
+            <div class="jr-contributors-inner">
+                <div class="jr-contributors-head">
+                    <span class="section-subtitle">IN THIS ISSUE</span>
+                    <h2 class="section-title">Made by<br><span class="title-italic">people</span></h2>
+                    <p>The writers, photographers, cooks, and hosts who lent us their eyes for this issue.</p>
+                </div>
+
+                <div class="jr-people">
+                    <figure class="jr-person">
+                        <img src="../images/r31.webp" alt="Ceramicist at work">
+                        <figcaption><span>WORDS</span><strong>Elena Marchetti</strong><em>On rooms and memory</em></figcaption>
+                    </figure>
+                    <figure class="jr-person">
+                        <img src="../images/r32.webp" alt="Gardener in a private villa garden">
+                        <figcaption><span>PHOTOGRAPHY</span><strong>Marco De Luca</strong><em>On the coast at dawn</em></figcaption>
+                    </figure>
+                    <figure class="jr-person">
+                        <img src="../images/r33.webp" alt="Local host sharing a story">
+                        <figcaption><span>INTERVIEW</span><strong>Nadia Chen</strong><em>On listening closely</em></figcaption>
+                    </figure>
+                    <figure class="jr-person">
+                        <img src="../images/r34.webp" alt="Local guide on a coastal path">
+                        <figcaption><span>FIELD NOTES</span><strong>Thomas Reed</strong><em>On walking slowly</em></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 11: Letters -->
+        <section class="jr-letters">
+            <div class="jr-letters-bg">
+                <img src="../images/r29.webp" alt="A coastal home by the sea">
+            </div>
+            <div class="jr-letters-veil"></div>
+
+            <div class="jr-letters-inner">
+                <span class="section-subtitle light">LETTERS FROM ELSEWHERE</span>
+                <h2 class="section-title light">One letter.<br><span class="title-italic">Once a month.</span></h2>
+                <p>New stories, quiet places, and things worth noticing. No noise, no daily digest, no urgency.</p>
+
+                <form class="jr-form" id="jrForm" autocomplete="off" novalidate>
+                    <label for="jrEmail" class="sr-only">Email address</label>
+                    <input id="jrEmail" type="text" name="email" inputmode="email" autocomplete="off" spellcheck="false" placeholder="Your email address" aria-describedby="jrFormNote">
+                    <button type="submit" class="jr-btn jr-btn--gold">
+                        <span>Join the list</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+                <span class="jr-form-note" id="jrFormNote" role="status" aria-live="polite">We send one letter a month. You can leave whenever you like.</span>
+            </div>
+        </section>
+    </main>
+
+    <!-- Section 12: Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-top">
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="../index.html" class="footer-logo" aria-label="Stackly home"><img src="../images/logo-full-theme.webp" alt="Stackly"></a>
+                        <p class="footer-description">Curating exceptional private villas for discerning travelers seeking authentic luxury and meaningful experiences.</p>
+                        <div class="footer-social">
+                            <a href="404.html" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="404.html" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="404.html" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="404.html" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="../index.html"><i class="fas fa-house" aria-hidden="true"></i>Home</a></li>
+                            <li><a href="story.html"><i class="fas fa-book-open" aria-hidden="true"></i>Story</a></li>
+                            <li><a href="experiences.html"><i class="fas fa-compass" aria-hidden="true"></i>Experiences</a></li>
+                            <li><a href="journal.html"><i class="fas fa-pen-nib" aria-hidden="true"></i>Journal</a></li>
+                            <li><a href="contact.html"><i class="fas fa-address-book" aria-hidden="true"></i>Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="../index.html#villas">Villas</a></li>
+                            <li><a href="experiences.html">Experiences</a></li>
+                            <li><a href="../index.html#destinations">Destinations</a></li>
+                            <li><a href="journal.html">Journal</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="404.html"><i class="fas fa-envelope" aria-hidden="true"></i>info@stackly.com</a></li>
+                            <li><a href="404.html"><i class="fas fa-phone" aria-hidden="true"></i>9875645365</a></li>
+                            <li><a href="404.html"><i class="fas fa-location-dot" aria-hidden="true"></i>MMR Complex, Chinna Thirupathi, near Chinna Muniyappan Kovil, Salem, Tamil Nadu 636008</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <div class="footer-bottom-content">
+                    <span>&copy; 2026 Stackly. All rights reserved.</span>
+                    <div class="footer-links">
+                        <a href="404.html">Privacy Policy</a>
+                        <a href="404.html">Terms &amp; Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="../JS/journal.js"></script>
+</body>
+
+</html>
+

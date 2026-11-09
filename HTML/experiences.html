@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiences | Stackly</title>
+    <link rel="icon" type="image/webp" href="../images/icon.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Manrope:wght@300;400;500;600;700&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/home.css?v=20261109">
+    <link rel="stylesheet" href="../CSS/experience.css?v=20261108d">
+</head>
+
+<body class="experiences-page">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <a href="../index.html" class="preloader-brand" aria-label="Stackly home"><img src="../images/logo-full-theme.webp" alt="Stackly"></a>
+            <div class="preloader-bars">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 1: Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="../index.html" class="header-logo"><img src="../images/logo-full-theme.webp" alt="Stackly"></a>
+            <nav class="header-nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="story.html" class="nav-link">Story</a>
+                <a href="experiences.html" class="nav-link is-active" aria-current="page">Experiences</a>
+                <a href="journal.html" class="nav-link">Journal</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <a href="login.html" class="header-cta">Login</a>
+            <button class="hamburger" id="hamburger" type="button" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-bg"></div>
+        <button class="mobile-close" id="mobileClose" type="button" aria-label="Close menu"><i class="fas fa-times"></i></button>
+        <a href="../index.html" class="mobile-logo" aria-label="Stackly home"><img src="../images/logo-full-theme.webp" alt="Stackly"></a>
+        <nav class="mobile-nav">
+            <a href="../index.html" class="mobile-link">Home</a>
+            <a href="story.html" class="mobile-link">Story</a>
+            <a href="experiences.html" class="mobile-link is-active" aria-current="page">Experiences</a>
+            <a href="journal.html" class="mobile-link">Journal</a>
+            <a href="contact.html" class="mobile-link">Contact</a>
+            <a href="login.html" class="mobile-link mobile-link--cta">Login</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Section 2: Hero -->
+        <section class="ex-hero">
+            <div class="ex-hero-bg">
+                <img src="../images/r13.webp" alt="Golden hour over a private pool">
+            </div>
+            <div class="ex-hero-veil"></div>
+
+            <div class="ex-hero-inner">
+                <div class="ex-hero-copy">
+                    <span class="section-subtitle light">CURATED EXPERIENCES</span>
+                    <h1 class="ex-hero-title">
+                        <span class="ex-hero-line"><span>COLLECT</span></span>
+                        <span class="ex-hero-line"><span>MOMENTS</span></span>
+                        <span class="ex-hero-line ex-hero-line--italic"><em>not things</em></span>
+                    </h1>
+                    <p class="ex-hero-text">The villa is only the beginning. Around every home we know the skipper, the baker, the gardener, and the table that is worth a detour.</p>
+                    <div class="ex-hero-actions">
+                        <a href="404.html" class="ex-btn ex-btn--light">
+                            <span>Explore the collection</span>
+                            <i class="fas fa-arrow-down"></i>
+                        </a>
+                        <span class="ex-hero-note"><i class="fas fa-star"></i> Guest-only access</span>
+                    </div>
+                </div>
+
+                <div class="ex-hero-collage">
+                    <figure class="ex-hero-card ex-hero-card--one" data-tilt>
+                        <img src="../images/r21.webp" alt="Private boat day on clear water">
+                        <figcaption><span>ON THE WATER</span><strong>Private boat days</strong></figcaption>
+                    </figure>
+                    <figure class="ex-hero-card ex-hero-card--two" data-tilt>
+                        <img src="../images/r19.webp" alt="A table set with local food">
+                        <figcaption><span>AT THE TABLE</span><strong>Long lunches</strong></figcaption>
+                    </figure>
+                    <figure class="ex-hero-card ex-hero-card--three" data-tilt>
+                        <img src="../images/r25.webp" alt="Warm evening light in a villa">
+                        <figcaption><span>AFTER DARK</span><strong>Quiet evenings</strong></figcaption>
+                    </figure>
+
+                </div>
+            </div>
+
+            <div class="ex-hero-foot">
+                <span>THE STACKLY WAY OF SEEING A PLACE</span>
+            </div>
+        </section>
+
+        <!-- Section 3: Philosophy -->
+        <section id="intro" class="ex-intro">
+            <div class="ex-intro-head">
+                <span class="section-subtitle">THE PHILOSOPHY</span>
+                <h2 class="section-title">The best days are<br><span class="title-italic">never on a schedule</span></h2>
+                <p>We plan the things worth planning and leave the rest alone. A boat, a table, a door left open to the garden. The days fill themselves.</p>
+            </div>
+
+            <div class="ex-intro-strips">
+                <figure class="ex-strip ex-strip--one">
+                    <div class="ex-strip-media"><img src="../images/r15.webp" alt="Slow morning in a sunlit villa"></div>
+                    <figcaption><span>SLOW MORNINGS</span><strong>Breakfast without a clock</strong></figcaption>
+                </figure>
+                <figure class="ex-strip ex-strip--two">
+                    <div class="ex-strip-media"><img src="../images/r16.webp" alt="Garden path with greenery"></div>
+                    <figcaption><span>UNPLANNED AFTERNOONS</span><strong>Where the path decides</strong></figcaption>
+                </figure>
+                <figure class="ex-strip ex-strip--three">
+                    <div class="ex-strip-media"><img src="../images/r17.webp" alt="Terrace at golden hour"></div>
+                    <figcaption><span>LONG EVENINGS</span><strong>One more glass</strong></figcaption>
+                </figure>
+            </div>
+
+            <div class="ex-intro-foot">
+                <span><i class="fas fa-feather"></i> Nothing is compulsory. Everything is possible.</span>
+                <a href="404.html" class="ex-text-link"><span>See the rituals</span><i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <!-- Section 4: Rituals -->
+        <section id="rituals" class="ex-rituals">
+            <div class="ex-rituals-head">
+                <span class="section-subtitle">THE RITUALS</span>
+                <h2 class="section-title">Four ways to<br><span class="title-italic">lose track of time</span></h2>
+                <p>These are not activities to tick off. They are the rhythms that make a week feel like it belonged to you.</p>
+            </div>
+
+            <div class="ex-ritual-row">
+                <article class="ex-ritual">
+                    <div class="ex-ritual-bg"><img src="../images/r18.webp" alt="Natural materials and architectural detail"></div>
+                    <div class="ex-ritual-veil"></div>
+                    <span class="ex-ritual-icon"><i class="fas fa-water"></i></span>
+                    <div class="ex-ritual-body">
+                        <span>ON THE WATER</span>
+                        <h3>Go where the wind goes</h3>
+                        <p>A skipper, a small boat, and a coastline that looks different from the sea.</p>
+                        <a href="404.html" class="ex-ritual-link">Discover <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="ex-ritual">
+                    <div class="ex-ritual-bg"><img src="../images/r19.webp" alt="A table of local food"></div>
+                    <div class="ex-ritual-veil"></div>
+                    <span class="ex-ritual-icon"><i class="fas fa-wine-glass"></i></span>
+                    <div class="ex-ritual-body">
+                        <span>AT THE TABLE</span>
+                        <h3>Eat where the growers eat</h3>
+                        <p>A kitchen visit, a market morning, and a lunch that refuses to end.</p>
+                        <a href="404.html" class="ex-ritual-link">Discover <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="ex-ritual">
+                    <div class="ex-ritual-bg"><img src="../images/r20.webp" alt="A quiet travel moment in the shade"></div>
+                    <div class="ex-ritual-veil"></div>
+                    <span class="ex-ritual-icon"><i class="fas fa-moon"></i></span>
+                    <div class="ex-ritual-body">
+                        <span>AFTER DARK</span>
+                        <h3>Stay out a little later</h3>
+                        <p>A cellar door, a night swim, and the road home under a wide sky.</p>
+                        <a href="404.html" class="ex-ritual-link">Discover <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="ex-ritual">
+                    <div class="ex-ritual-bg"><img src="../images/r21.webp" alt="Sea and coastline from above"></div>
+                    <div class="ex-ritual-veil"></div>
+                    <span class="ex-ritual-icon"><i class="fas fa-bicycle"></i></span>
+                    <div class="ex-ritual-body">
+                        <span>ON LAND</span>
+                        <h3>Take the long way round</h3>
+                        <p>Borrow a bicycle, follow the old road, and stop whenever something catches your eye.</p>
+                        <a href="404.html" class="ex-ritual-link">Discover <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="ex-rituals-hint">
+                <span>Hover a ritual to open it</span>
+                <i class="fas fa-arrow-up-long"></i>
+            </div>
+        </section>
+
+        <!-- Section 5: Sea -->
+        <section class="ex-sea">
+            <div class="ex-sea-head">
+                <span class="section-subtitle light">ON THE WATER</span>
+                <h2 class="section-title light">A day with<br><span class="title-italic">no fixed address</span></h2>
+            </div>
+
+            <div class="ex-sea-layout">
+                <div class="ex-sea-visual">
+                    <figure class="ex-sea-main">
+                        <img id="exSeaImage" src="../images/r9.webp" alt="Amalfi Coast from the sea">
+                        <figcaption class="ex-sea-caption">
+                            <span id="exSeaPlace">AMALFI COAST</span>
+                            <strong id="exSeaTitle">The first swim</strong>
+                        </figcaption>
+                    </figure>
+                    <figure class="ex-sea-small ex-sea-small--one">
+                        <img src="../images/r10.webp" alt="Atlantic coast">
+                    </figure>
+                    <span class="ex-sea-tag"><i class="fas fa-anchor"></i> A PRIVATE SKIPPER</span>
+                </div>
+
+                <div class="ex-sea-list">
+                    <button class="ex-sea-item is-active" type="button" data-img="../images/r9.webp" data-place="AMALFI COAST" data-title="The first swim">
+                        <span class="ex-sea-item-top"><i class="fas fa-water"></i> The first swim</span>
+                        <strong>Amalfi Coast</strong>
+                        <span class="ex-sea-copy">Leave before the beach clubs wake and swim where the water is still glass.</span>
+                        <span class="ex-sea-arrow"><i class="fas fa-arrow-up-right"></i></span>
+                    </button>
+
+                    <button class="ex-sea-item" type="button" data-img="../images/r10.webp" data-place="ATLANTIC COAST" data-title="The long lunch">
+                        <span class="ex-sea-item-top"><i class="fas fa-anchor"></i> The long lunch</span>
+                        <strong>Atlantic Coast</strong>
+                        <span class="ex-sea-copy">A fishing village, a table on the harbour, and no reason to look at the time.</span>
+                        <span class="ex-sea-arrow"><i class="fas fa-arrow-up-right"></i></span>
+                    </button>
+
+                    <button class="ex-sea-item" type="button" data-img="../images/r11.webp" data-place="FRENCH RIVIERA" data-title="The quiet cove">
+                        <span class="ex-sea-item-top"><i class="fas fa-sailboat"></i> The quiet cove</span>
+                        <strong>French Riviera</strong>
+                        <span class="ex-sea-copy">Past the crowded stretch, a cove that only the locals seem to know.</span>
+                        <span class="ex-sea-arrow"><i class="fas fa-arrow-up-right"></i></span>
+                    </button>
+
+                    <button class="ex-sea-item" type="button" data-img="../images/r12.webp" data-place="THE AEGEAN" data-title="The last light">
+                        <span class="ex-sea-item-top"><i class="fas fa-sun"></i> The last light</span>
+                        <strong>The Aegean</strong>
+                        <span class="ex-sea-copy">Turn the boat home as the islands go gold, then blue, then dark.</span>
+                        <span class="ex-sea-arrow"><i class="fas fa-arrow-up-right"></i></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Table -->
+        <section class="ex-table">
+            <div class="ex-table-shell">
+                <div class="ex-table-head">
+                    <div>
+                        <span class="section-subtitle">AT THE TABLE</span>
+                        <h2 class="section-title">Taste the place,<br><span class="title-italic">not the menu</span></h2>
+                    </div>
+                    <div class="ex-table-intro">
+                        <p>We introduce you to the people who grow, catch, bake, and pour. What happens after that is between you, them, and the afternoon.</p>
+                        <a href="404.html" class="ex-text-link"><span>Ask about a table</span><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="ex-table-grid">
+                    <figure class="ex-table-hero">
+                        <img src="../images/r19.webp" alt="A long table of local food">
+                        <figcaption>
+                            <span>THE LONG LUNCH</span>
+                            <strong>Food with a postcode</strong>
+                        </figcaption>
+                    </figure>
+
+                    <div class="ex-table-menu" aria-label="Table experiences">
+                        <article class="ex-dish" tabindex="0">
+                            <span class="ex-dish-index">01</span>
+                            <div class="ex-dish-copy">
+                                <span class="ex-dish-tag">MARKET MORNING</span>
+                                <h3>Before the street wakes</h3>
+                                <p>Meet the grower, choose the peaches, then let the villa chef turn the morning into lunch.</p>
+                            </div>
+                            <figure class="ex-dish-thumb">
+                                <img src="../images/r5.webp" alt="Villa kitchen detail">
+                            </figure>
+                            <span class="ex-dish-arrow"><i class="fas fa-arrow-up-right"></i></span>
+                        </article>
+
+                        <article class="ex-dish" tabindex="0">
+                            <span class="ex-dish-index">02</span>
+                            <div class="ex-dish-copy">
+                                <span class="ex-dish-tag">FROM THE SEA</span>
+                                <h3>The catch decides</h3>
+                                <p>A fisherman arrives at the gate with the morning's catch. The menu is written after that.</p>
+                            </div>
+                            <figure class="ex-dish-thumb">
+                                <img src="../images/r6.webp" alt="Local produce and ingredients">
+                            </figure>
+                            <span class="ex-dish-arrow"><i class="fas fa-arrow-up-right"></i></span>
+                        </article>
+
+                        <article class="ex-dish" tabindex="0">
+                            <span class="ex-dish-index">03</span>
+                            <div class="ex-dish-copy">
+                                <span class="ex-dish-tag">THE GARDEN TABLE</span>
+                                <h3>Dinner among the herbs</h3>
+                                <p>Small vineyards, old recipes, and a table set under the trees long after the plates are cleared.</p>
+                            </div>
+                            <figure class="ex-dish-thumb">
+                                <img src="../images/r7.webp" alt="A table set for lunch">
+                            </figure>
+                            <span class="ex-dish-arrow"><i class="fas fa-arrow-up-right"></i></span>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="ex-table-foot">
+                    <span><i class="fas fa-utensils"></i> Every table is arranged around the place, never a set menu.</span>
+                    <span>SEASONAL &amp; LOCAL</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: After Dark -->
+        <section class="ex-dark">
+            <div class="ex-dark-inner">
+                <figure class="ex-dark-visual">
+                    <img class="ex-dark-img ex-dark-img--day" src="../images/r25.webp" alt="Evening light in a villa">
+                    <img class="ex-dark-img ex-dark-img--night" src="../images/r24.webp" alt="Poolside calm after dark">
+                    <span class="ex-dark-hint">HOVER FOR AFTER DARK <i class="fas fa-moon"></i></span>
+                </figure>
+
+                <div class="ex-dark-copy">
+                    <span class="section-subtitle light">AFTER DARK</span>
+                    <h2 class="section-title light">The night has<br><span class="title-italic">its own itinerary</span></h2>
+                    <p>The best evenings are rarely booked. They begin with a bottle left on the table and end with someone suggesting a swim.</p>
+                    <ul class="ex-dark-list">
+                        <li><i class="fas fa-wine-glass"></i> Cellar tastings after closing</li>
+                        <li><i class="fas fa-music"></i> A local musician, a private courtyard</li>
+                        <li><i class="fas fa-star"></i> A night swim with the lights off</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Makers -->
+        <section class="ex-makers">
+            <div class="ex-makers-head">
+                <span class="section-subtitle">THE MAKERS</span>
+                <h2 class="section-title">People worth<br><span class="title-italic">knowing</span></h2>
+                <p>Every experience begins with someone who cares about what they do. These are a few of the people we are lucky to know.</p>
+            </div>
+
+            <div class="ex-maker-grid">
+                <figure class="ex-maker ex-maker--one">
+                    <img src="../images/r31.webp" alt="Ceramicist at work">
+                    <figcaption>
+                        <span>CERAMICS</span>
+                        <strong>Lucia</strong>
+                        <p>The plates on your table were made three villages away.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="ex-maker ex-maker--two">
+                    <img src="../images/r32.webp" alt="Gardener in a private villa garden">
+                    <figcaption>
+                        <span>THE GARDEN</span>
+                        <strong>Tomas</strong>
+                        <p>He knows which fig tree is ready before the birds do.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="ex-maker ex-maker--three">
+                    <img src="../images/r33.webp" alt="Local host sharing a story">
+                    <figcaption>
+                        <span>THE TABLE</span>
+                        <strong>Marta</strong>
+                        <p>Her Sunday lunches have become a reason to return.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="ex-maker ex-maker--four">
+                    <img src="../images/r34.webp" alt="Local guide on a coastal path">
+                    <figcaption>
+                        <span>THE PATH</span>
+                        <strong>Nico</strong>
+                        <p>He walks the coast so often he knows where the wind will turn.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Section 9: Seasons -->
+        <section class="ex-seasons">
+            <div class="ex-seasons-head">
+                <span class="section-subtitle">THE SEASONS</span>
+                <h2 class="section-title">A year in<br><span class="title-italic">four chapters</span></h2>
+                <p>The same place, four different holidays. We will tell you when to come for the thing you are looking for.</p>
+            </div>
+
+            <div class="ex-season-rail">
+                <span class="ex-season-line"><span></span></span>
+
+                <article class="ex-season ex-season--top">
+                    <figure><img src="../images/r22.webp" alt="Spring light by the coast"></figure>
+                    <div>
+                        <span>SPRING</span>
+                        <h3>Wild flowers and empty roads</h3>
+                        <p>The coast wakes up slowly. Come for long walks and tables that are easy to book.</p>
+                    </div>
+                </article>
+
+                <article class="ex-season ex-season--bottom">
+                    <figure><img src="../images/r26.webp" alt="Summer villa framed by nature"></figure>
+                    <div>
+                        <span>SUMMER</span>
+                        <h3>Sea days and late dinners</h3>
+                        <p>The water is warm, the evenings are long, and the best plan is no plan.</p>
+                    </div>
+                </article>
+
+                <article class="ex-season ex-season--top">
+                    <figure><img src="../images/r29.webp" alt="Autumn coastal home"></figure>
+                    <div>
+                        <span>AUTUMN</span>
+                        <h3>Harvest, olives, and quiet</h3>
+                        <p>The crowds leave and the kitchen takes over. This is when the locals exhale.</p>
+                    </div>
+                </article>
+
+                <article class="ex-season ex-season--bottom">
+                    <figure><img src="../images/r36.webp" alt="Winter light over the coast"></figure>
+                    <div>
+                        <span>WINTER</span>
+                        <h3>Firelight and empty beaches</h3>
+                        <p>Short days, long lunches, and a coastline that feels like it belongs to you.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Section 10: Guest Notes -->
+        <section class="ex-notes">
+            <div class="ex-notes-inner">
+                <div class="ex-notes-stack">
+                    <figure class="ex-note-photo is-active" data-photo="0">
+                        <img src="../images/r33.webp" alt="Guest portrait in a villa">
+                    </figure>
+                    <figure class="ex-note-photo" data-photo="1">
+                        <img src="../images/r17.webp" alt="Guest on a terrace at golden hour">
+                    </figure>
+                    <figure class="ex-note-photo" data-photo="2">
+                        <img src="../images/r23.webp" alt="Quiet corner of a guest villa">
+                    </figure>
+                    <span class="ex-notes-stamp"><i class="fas fa-quote-left"></i> GUEST NOTES</span>
+                </div>
+
+                <div class="ex-notes-copy">
+                    <span class="section-subtitle">IN THEIR WORDS</span>
+                    <blockquote id="exNoteQuote">We arrived for the house and left talking about the people. The boat day was the best afternoon we have had in years.</blockquote>
+                    <div class="ex-note-tabs">
+                        <button class="ex-note-tab is-active" type="button" data-index="0" data-quote="We arrived for the house and left talking about the people. The boat day was the best afternoon we have had in years.">
+                            <span>Elena &amp; James</span>
+                            <em>Amalfi Coast</em>
+                        </button>
+                        <button class="ex-note-tab" type="button" data-index="1" data-quote="Nothing felt arranged for us. It felt as though a friend had quietly made sure the week would be good.">
+                            <span>Sophie &amp; Marc</span>
+                            <em>French Riviera</em>
+                        </button>
+                        <button class="ex-note-tab" type="button" data-index="2" data-quote="The table on the last night was the whole holiday in one evening. We are still trying to recreate it at home.">
+                            <span>The Bennett Family</span>
+                            <em>The Aegean</em>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 11: Plan -->
+        <section id="plan" class="ex-plan">
+            <div class="ex-plan-bg"><img src="../images/r35.webp" alt="Sunlit coastal landscape"></div>
+            <div class="ex-plan-veil"></div>
+
+            <div class="ex-plan-inner">
+                <span class="section-subtitle light">YOUR DAYS, YOUR WAY</span>
+                <h2 class="section-title light">Tell us how<br><span class="title-italic">you like to feel</span></h2>
+                <p>We will take it from there. A few questions, a conversation, and a week that fits the way you actually want to travel.</p>
+
+                <div class="ex-plan-chips">
+                    <button class="ex-plan-chip" type="button">
+                        <span><i class="fas fa-utensils"></i> A table worth travelling for</span>
+                        <span class="ex-plan-chip-img"><img src="../images/r7.webp" alt="A table set for lunch"></span>
+                    </button>
+                    <button class="ex-plan-chip" type="button">
+                        <span><i class="fas fa-water"></i> A day that ends at sea</span>
+                        <span class="ex-plan-chip-img"><img src="../images/r14.webp" alt="Mediterranean coastline"></span>
+                    </button>
+                    <button class="ex-plan-chip" type="button">
+                        <span><i class="fas fa-compass"></i> A road with no plan</span>
+                        <span class="ex-plan-chip-img"><img src="../images/r37.webp" alt="Linen and interior detail"></span>
+                    </button>
+                </div>
+
+                <a href="404.html" class="ex-btn ex-btn--gold">
+                    <span>Start planning</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Section 12: Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-top">
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="../index.html" class="footer-logo" aria-label="Stackly home"><img src="../images/logo-full-theme.webp" alt="Stackly"></a>
+                        <p class="footer-description">Curating exceptional private villas for discerning travelers seeking authentic luxury and meaningful experiences.</p>
+                        <div class="footer-social">
+                            <a href="404.html" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="404.html" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="404.html" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="404.html" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="../index.html"><i class="fas fa-house" aria-hidden="true"></i>Home</a></li>
+                            <li><a href="story.html"><i class="fas fa-book-open" aria-hidden="true"></i>Story</a></li>
+                            <li><a href="experiences.html"><i class="fas fa-compass" aria-hidden="true"></i>Experiences</a></li>
+                            <li><a href="journal.html"><i class="fas fa-pen-nib" aria-hidden="true"></i>Journal</a></li>
+                            <li><a href="contact.html"><i class="fas fa-address-book" aria-hidden="true"></i>Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="../index.html#villas">Villas</a></li>
+                            <li><a href="experiences.html">Experiences</a></li>
+                            <li><a href="../index.html#destinations">Destinations</a></li>
+                            <li><a href="journal.html">Journal</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="404.html"><i class="fas fa-envelope" aria-hidden="true"></i>info@stackly.com</a></li>
+                            <li><a href="404.html"><i class="fas fa-phone" aria-hidden="true"></i>9875645365</a></li>
+                            <li><a href="404.html"><i class="fas fa-location-dot" aria-hidden="true"></i>MMR Complex, Chinna Thirupathi, near Chinna Muniyappan Kovil, Salem, Tamil Nadu 636008</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <div class="footer-bottom-content">
+                    <span>&copy; 2026 Stackly. All rights reserved.</span>
+                    <div class="footer-links">
+                        <a href="404.html">Privacy Policy</a>
+                        <a href="404.html">Terms &amp; Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="../JS/experience.js?v=20261108c"></script>
+</body>
+
+</html>
+
+
