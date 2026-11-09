@@ -917,6 +917,22 @@
     });
   }
 
+  /* logo: show themed preloader, then reload this dashboard */
+  var brandLogo = doc.querySelector('.side__brand a');
+  var dashPreloader = doc.getElementById('dashPreloader');
+  var logoLoading = false;
+  if (brandLogo && dashPreloader) {
+    brandLogo.addEventListener('click', function (e) {
+      if (logoLoading) { e.preventDefault(); return; }
+      if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      e.preventDefault();
+      logoLoading = true;
+      dashPreloader.classList.add('is-active');
+      dashPreloader.setAttribute('aria-hidden', 'false');
+      win.setTimeout(function () { win.location.reload(); }, 1700);
+    });
+  }
+
   /* demo actions + toasts */
   var toasts = doc.getElementById('dashToasts');
   function toast(message, isBad) {
@@ -937,5 +953,13 @@
   /* boot */
   show(menu[0].key, menu[0].label);
 
-  win.addEventListener('pageshow', function (e) { if (e.persisted) closeMenu(); });
+  win.addEventListener('pageshow', function (e) {
+    if (!e.persisted) return;
+    closeMenu();
+    if (dashPreloader) {
+      dashPreloader.classList.remove('is-active');
+      dashPreloader.setAttribute('aria-hidden', 'true');
+    }
+    logoLoading = false;
+  });
 })();
